@@ -1,0 +1,173 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: 'Integral CF';
+  src: url('Fontspring-DEMO-integralcf-bold.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Integral CF';
+  src: url('Fontspring-DEMO-integralcf-boldoblique.otf') format('opentype');
+  font-weight: 700;
+  font-style: oblique;
+}
+
+@font-face {
+  font-family: 'Integral CF';
+  src: url('/public/fonts/Fontspring-DEMO-integralcf-demibold.otf') format('opentype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Integral CF';
+  src: url('/public/fonts/Fontspring-DEMO-integralcf-demiboldoblique.otf') format('opentype');
+  font-weight: 600;
+  font-style: oblique;
+}
+
+@font-face {
+  font-family: 'Integral CF';
+  src: url('/public/fonts/Fontspring-DEMO-integralcf-extrabold.otf') format('opentype');
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Integral CF';
+  src: url('/public/fonts/Fontspring-DEMO-integralcf-extraboldoblique.otf') format('opentype');
+  font-weight: 800;
+  font-style: oblique;
+}
+
+@font-face {
+  font-family: 'Integral CF';
+  src: url('/public/fonts/Fontspring-DEMO-integralcf-heavy.otf') format('opentype');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Integral CF';
+  src: url('/public/fonts/Fontspring-DEMO-integralcf-heavyoblique.otf') format('opentype');
+  font-weight: 900;
+  font-style: oblique;
+}
+
+@font-face {
+  font-family: 'Integral CF';
+  src: url('/public/fonts/Fontspring-DEMO-integralcf-medium.otf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Integral CF';
+  src: url('/public/fonts/Fontspring-DEMO-integralcf-mediumoblique.otf') format('opentype');
+  font-weight: 500;
+  font-style: oblique;
+}
+
+@font-face {
+  font-family: 'Integral CF';
+  src: url('/public/fonts/Fontspring-DEMO-integralcf-regular.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Integral CF';
+  src: url('/public/fonts/Fontspring-DEMO-integralcf-regularoblique.otf') format('opentype');
+  font-weight: 400;
+  font-style: oblique;
+}
+
+@font-face {
+  font-family: 'Satoshi';
+  src: url('/public/fonts/Satoshi-Medium.otf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+:root {
+  --primary-color: #000000;
+  --secondary-color: #666666;
+  --accent-color: #F1F1F1;
+  scroll-behavior: smooth;
+}
+
+@layer utilities {
+  .regular {
+    @apply font-normal not-italic;
+  }
+
+  .regular-oblique {
+    @apply font-normal italic;
+  }
+
+  .medium {
+    @apply font-medium not-italic;
+  }
+
+  .medium-oblique {
+    @apply font-medium italic;
+  }
+
+  .demibold {
+    @apply font-semibold not-italic;
+  }
+
+  .demibold-oblique {
+    @apply font-semibold italic;
+  }
+
+  .bold {
+    @apply font-bold not-italic;
+  }
+
+  .bold-oblique {
+    @apply font-bold italic;
+  }
+
+  .extrabold {
+    @apply font-extrabold not-italic;
+  }
+
+  .extrabold-oblique {
+    @apply font-extrabold italic;
+  }
+
+  .heavy {
+    @apply font-black not-italic;
+  }
+
+  .heavy-oblique {
+    @apply font-black italic;
+  }
+
+  .integral {
+    font-family: 'Integral CF', sans-serif;
+  }
+  
+  .satoshi {
+    font-family: 'Satoshi', sans-serif;
+  }
+
+  .soft-gray {
+    @apply bg-[#f2f0f1];
+  }
+
+  section {
+    @apply w-full h-auto;
+  }
+
+  .button {
+    @apply bg-black text-white px-16 lg:w-auto w-full py-4 rounded-full text-lg font-medium hover:bg-gray-800 transition-colors mb-12
+  }
+
+  .reversed-button{
+    @apply px-8 py-3 border border-gray-300 rounded-full font-medium text-gray-700 hover:bg-gray-50 transition-colors
+  }
+}
