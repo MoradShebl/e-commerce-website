@@ -16,6 +16,10 @@ type Product = {
   description?: string;
   images: {
     [color: string]: string[] | undefined;
+    Red?: string[];
+    Blue?: string[];
+    Black?: string[];
+    red?: string[];
   };
   reviews?: Review[];
   faq?: FAQItem[];
