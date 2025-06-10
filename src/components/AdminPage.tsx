@@ -225,7 +225,7 @@ const AdminDashboard: React.FC = () => {
         
         resetForm();
         setActiveTab("manage");
-        console.log(items)
+        // console.log(items)
     };
 
     const handleEditItem = (item: Item) => {

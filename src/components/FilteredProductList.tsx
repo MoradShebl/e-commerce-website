@@ -73,7 +73,7 @@ const FilteredProductList = ({ filter_type }: FilteredProductListProps) => {
         return (
           <ProductCard
             key={`${item.id}-${idx}`}
-            image={image}
+            images={item.images[firstColor] || [image]}
             name={item.name}
             stars={item.stars}
             offer_price={item.offer_price}

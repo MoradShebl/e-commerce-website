@@ -3,6 +3,7 @@ import Header from './components/Header';
 import MainPage from './components/pages/MainPage';
 import NotFoundPage from './components/NotFoundPage';
 import AdminPage from './components/AdminPage';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
           {/* Fallback route for 404 */}
           <Route path="*" element={<NotFoundPage />} />
         </Routes>
+        <Footer />
       </Router>
     </>
   );

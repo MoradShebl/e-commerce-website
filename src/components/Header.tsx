@@ -51,7 +51,7 @@ const Header = () => {
   }, [isMobileMenuOpen]);
 
   return (
-    <div className="xl:fixed sticky top-0 w-full z-50 bg-white">
+    <div className="xl:fixed sticky top-0 w-full z-50 bg-white verysm:hidden">
       {/* Announcement Bar */}
       <div className="bg-black h-auto min-h-[32px] flex items-center justify-center text-white text-sm py-1 w-full">
         <p className="text-center px-2 sm:px-4 md:px-0 text-xs sm:text-sm">

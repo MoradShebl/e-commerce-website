@@ -35,7 +35,7 @@ const HeroSection = () => {
                         {/* Stats Section */}
                         <div className="w-full max-w-4xl mx-auto">
                             {/* Mobile/Tablet Grid: 2 top, 1 bottom */}
-                            <div className="grid grid-cols-2 md:grid-cols-3 gap-6 md:gap-8 lg:gap-12">
+                            <div className="flex flex-wrap items-center justify-center lg:justify-around gap-6 md:gap-8 lg:gap-12">
                                 {/* Stat 1 */}
                                 <div className="text-center">
                                     <span className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-black block satoshi demibold">200+</span>

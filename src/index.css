@@ -171,3 +171,8 @@
     @apply px-8 py-3 border border-gray-300 rounded-full font-medium text-gray-700 hover:bg-gray-50 transition-colors
   }
 }
+@media (max-width: 220px) {
+  .verysm\:hidden {
+    display: none;
+  }
+}
