@@ -8,11 +8,31 @@ type Product = {
   price: number;
   offer_price: number;
   stars: number;
+  type?: string;
+  dress_style?: string;
+  colors?: string[];
   quantity: number;
+  sizes?: string[];
+  description?: string;
   images: {
-    [color: string]: string[];
+    [color: string]: string[] | undefined;
   };
+  reviews?: Review[];
+  faq?: FAQItem[];
   date: string;
+};
+
+type Review = {
+  id: number;
+  user: string;
+  rating: number;
+  comment: string;
+  date: string;
+};
+
+type FAQItem = {
+  question: string;
+  answer: string;
 };
 
 type FilteredProductListProps = {
