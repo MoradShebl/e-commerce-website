@@ -12,7 +12,7 @@ const Footer= () => {
     <footer className="bg-gray-100 py-8 px-4 sm:px-6 lg:px-8 mt-10">
       <div className="w-full">
         {/* Newsletter Section */}
-        <div className="bg-black rounded-lg p-6 mb-8 flex flex-col lg:flex-row items-center justify-around">
+        <div className="bg-black rounded-3xl p-6 mb-8 flex flex-col lg:flex-row items-center justify-around">
           <h2 className="text-white lg:text-3xl w-full lg:max-w-1/2 text-lg mb-4 integral demibold">
             STAY UPTO DATE
             ABOUT OUR

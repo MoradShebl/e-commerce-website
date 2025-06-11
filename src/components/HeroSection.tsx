@@ -10,7 +10,7 @@ const Icons = {
 
 const HeroSection = () => {
     return (
-        <section className='soft-gray flex items-center overflow-hidden'>
+        <section className='lg:mt-0 mt-10 soft-gray flex items-center overflow-hidden'>
             {/* Background decorative sparkles */}
 
             <div className="container mx-auto lg:px-10 px-5 min-h-auto">
