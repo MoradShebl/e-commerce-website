@@ -35,205 +35,193 @@ const Icons = {
 
 const navItems: string[] = ['Shop', 'On Sale', 'New Arrivals', 'Brands'];
 
+// GSAP CDN script loader
+const loadGSAP = () => {
+  return new Promise((resolve, reject) => {
+    if (window.gsap) {
+      resolve(window.gsap);
+      return;
+    }
+    
+    const script = document.createElement('script');
+    script.src = 'https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js';
+    script.onload = () => resolve(window.gsap);
+    script.onerror = reject;
+    document.head.appendChild(script);
+  });
+};
+
 const Header: React.FC = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState<boolean>(false);
   const [isDropdownOpen, setIsDropdownOpen] = useState<boolean>(false);
   const [isMobileDropdownOpen, setIsMobileDropdownOpen] = useState<boolean>(false);
+  const [gsap, setGsap] = useState<any>(null);
+  
   const menuLinksRef = useRef<(HTMLAnchorElement | null)[]>([]);
   const dropdownRef = useRef<HTMLDivElement | null>(null);
   const dropdownItemsRef = useRef<(HTMLAnchorElement | null)[]>([]);
   const mobileDropdownRef = useRef<HTMLDivElement | null>(null);
   const mobileDropdownItemsRef = useRef<(HTMLAnchorElement | null)[]>([]);
   const dropdownContainerRef = useRef<HTMLDivElement | null>(null);
+  const mobileMenuRef = useRef<HTMLDivElement | null>(null);
+  const chevronRef = useRef<SVGSVGElement | null>(null);
+  const mobileChevronRef = useRef<SVGSVGElement | null>(null);
   const hoverTimeoutRef = useRef<NodeJS.Timeout | null>(null);
+
+  // Load GSAP on component mount
+  useEffect(() => {
+    loadGSAP().then((gsapInstance) => {
+      setGsap(gsapInstance);
+    }).catch((error) => {
+      console.error('Failed to load GSAP:', error);
+    });
+  }, []);
 
   // Mobile menu animation
   useEffect(() => {
+    if (!gsap || !mobileMenuRef.current) return;
+
     if (isMobileMenuOpen) {
-      // Animate mobile menu items in
-      menuLinksRef.current.forEach((item, index) => {
-        if (item) {
-          item.style.transform = 'translateX(0px)';
-          item.style.opacity = '1';
-          item.style.transition = `all 0.6s cubic-bezier(0.23, 1, 0.32, 1) ${(index + 1) * 0.1}s`;
-        }
+      // Animate mobile menu container
+      gsap.to(mobileMenuRef.current, {
+        x: 0,
+        duration: 0.5,
+        ease: "power3.out"
       });
 
+      // Animate mobile menu items in
+      const validItems = menuLinksRef.current.filter(item => item !== null);
+      gsap.fromTo(validItems, 
+        { x: -30, opacity: 0 },
+        { 
+          x: 0, 
+          opacity: 1, 
+          duration: 0.6,
+          stagger: 0.1,
+          delay: 0.2,
+          ease: "power3.out"
+        }
+      );
+
       // Animate the mobile shop dropdown trigger
-      const shopTrigger = document.querySelector('#mobile-menu .cursor-pointer');
+      const shopTrigger = document.querySelector('#mobile-menu .mobile-shop-trigger');
       if (shopTrigger) {
-        (shopTrigger as HTMLElement).style.transform = 'translateX(0px)';
-        (shopTrigger as HTMLElement).style.opacity = '1';
-        (shopTrigger as HTMLElement).style.transition = 'all 0.6s cubic-bezier(0.23, 1, 0.32, 1) 0.1s';
+        gsap.fromTo(shopTrigger,
+          { x: -30, opacity: 0 },
+          { x: 0, opacity: 1, duration: 0.6, delay: 0.1, ease: "power3.out" }
+        );
       }
     } else {
-      // Animate mobile menu items out
-      menuLinksRef.current.forEach((item, index) => {
-        if (item) {
-          item.style.transform = 'translateX(-20px)';
-          item.style.opacity = '0';
-          item.style.transition = `all 0.6s cubic-bezier(0.55, 0, 0.1, 1) ${index * 0.05}s`;
-        }
+      // Animate mobile menu out
+      gsap.to(mobileMenuRef.current, {
+        x: '-100%',
+        duration: 0.5,
+        ease: "power3.in"
       });
 
       // Reset mobile dropdown when closing mobile menu
       setIsMobileDropdownOpen(false);
-
-      // Animate the mobile shop dropdown trigger out
-      const shopTrigger = document.querySelector('#mobile-menu .cursor-pointer');
-      if (shopTrigger) {
-        (shopTrigger as HTMLElement).style.transform = 'translateX(-20px)';
-        (shopTrigger as HTMLElement).style.opacity = '0';
-        (shopTrigger as HTMLElement).style.transition = 'all 0.6s cubic-bezier(0.55, 0, 0.1, 1) 0s';
-      }
     }
-  }, [isMobileMenuOpen]);
+  }, [isMobileMenuOpen, gsap]);
 
-  // Dropdown animation (Desktop)
+  // Desktop dropdown animation
   useEffect(() => {
-    if (dropdownRef.current) {
-      if (isDropdownOpen) {
-        // Show dropdown with scale and fade animation
-        dropdownRef.current.style.display = 'flex';
-        dropdownRef.current.style.transform = 'translateY(-10px) scale(0.95)';
-        dropdownRef.current.style.opacity = '0';
+    if (!gsap || !dropdownRef.current) return;
 
-        // Force reflow
-        dropdownRef.current.offsetHeight;
+    if (isDropdownOpen) {
+      // Show dropdown with scale and fade animation
+      gsap.set(dropdownRef.current, { display: 'flex' });
+      gsap.fromTo(dropdownRef.current,
+        { y: -10, scale: 0.95, opacity: 0 },
+        { y: 0, scale: 1, opacity: 1, duration: 0.3, ease: "power3.out" }
+      );
 
-        dropdownRef.current.style.transition = 'all 0.3s cubic-bezier(0.23, 1, 0.32, 1)';
-        dropdownRef.current.style.transform = 'translateY(0px) scale(1)';
-        dropdownRef.current.style.opacity = '1';
+      // Animate dropdown items
+      const validItems = dropdownItemsRef.current.filter(item => item !== null);
+      gsap.fromTo(validItems,
+        { y: -10, opacity: 0 },
+        { 
+          y: 0, 
+          opacity: 1, 
+          duration: 0.4,
+          stagger: 0.08,
+          ease: "power3.out"
+        }
+      );
 
-        // Animate dropdown items
-        dropdownItemsRef.current.forEach((item, index) => {
-          if (item) {
-            item.style.transform = 'translateY(-10px)';
-            item.style.opacity = '0';
-            item.style.transition = `all 0.4s cubic-bezier(0.23, 1, 0.32, 1) ${index * 0.08}s`;
-
-            // Force reflow
-            item.offsetHeight;
-
-            item.style.transform = 'translateY(0px)';
-            item.style.opacity = '1';
+      // Animate chevron rotation
+      if (chevronRef.current) {
+        gsap.to(chevronRef.current, { rotation: 180, duration: 0.3, ease: "power3.out" });
+      }
+    } else {
+      // Hide dropdown with reverse animation
+      gsap.to(dropdownRef.current,
+        { 
+          y: -10, 
+          scale: 0.95, 
+          opacity: 0, 
+          duration: 0.2, 
+          ease: "power3.in",
+          onComplete: () => {
+            if (dropdownRef.current) {
+              gsap.set(dropdownRef.current, { display: 'none' });
+            }
           }
-        });
-      } else {
-        // Hide dropdown with reverse animation
-        dropdownRef.current.style.transition = 'all 0.2s cubic-bezier(0.55, 0, 0.1, 1)';
-        dropdownRef.current.style.transform = 'translateY(-10px) scale(0.95)';
-        dropdownRef.current.style.opacity = '0';
+        }
+      );
 
-        setTimeout(() => {
-          if (dropdownRef.current) {
-            dropdownRef.current.style.display = 'none';
-          }
-        }, 200);
+      // Animate chevron rotation back
+      if (chevronRef.current) {
+        gsap.to(chevronRef.current, { rotation: 0, duration: 0.3, ease: "power3.out" });
       }
     }
-  }, [isDropdownOpen]);
+  }, [isDropdownOpen, gsap]);
 
   // Mobile dropdown animation
   useEffect(() => {
-    if (mobileDropdownRef.current) {
-      if (isMobileDropdownOpen) {
-        // Show mobile dropdown
-        mobileDropdownRef.current.style.maxHeight = '200px';
-        mobileDropdownRef.current.style.opacity = '1';
+    if (!gsap || !mobileDropdownRef.current) return;
 
-        // Animate mobile dropdown items
-        mobileDropdownItemsRef.current.forEach((item, index) => {
-          if (item) {
-            item.style.transform = 'translateX(0px)';
-            item.style.opacity = '1';
-            item.style.transition = `all 0.4s cubic-bezier(0.23, 1, 0.32, 1) ${index * 0.1}s`;
-          }
-        });
-      } else {
-        // Hide mobile dropdown
-        mobileDropdownRef.current.style.maxHeight = '0px';
-        mobileDropdownRef.current.style.opacity = '0';
-
-        // Reset mobile dropdown items
-        mobileDropdownItemsRef.current.forEach((item) => {
-          if (item) {
-            item.style.transform = 'translateX(-20px)';
-            item.style.opacity = '0';
-            item.style.transition = 'all 0.3s cubic-bezier(0.55, 0, 0.1, 1)';
-          }
-        });
-      }
-    }
-  }, [isMobileDropdownOpen]);
-
-  // Mobile menu animation
-  useEffect(() => {
-    if (isMobileMenuOpen) {
-      // Animate mobile menu items in
-      menuLinksRef.current.forEach((item, index) => {
-        if (item) {
-          item.style.transform = 'translateX(0px)';
-          item.style.opacity = '1';
-          item.style.transition = `all 0.6s cubic-bezier(0.23, 1, 0.32, 1) ${index * 0.1}s`;
-        }
+    if (isMobileDropdownOpen) {
+      // Show mobile dropdown
+      gsap.to(mobileDropdownRef.current, {
+        height: 'auto',
+        opacity: 1,
+        duration: 0.3,
+        ease: "power3.out"
       });
+
+      // Animate mobile dropdown items
+      const validItems = mobileDropdownItemsRef.current.filter(item => item !== null);
+      gsap.fromTo(validItems,
+        { x: -20, opacity: 0 },
+        { 
+          x: 0, 
+          opacity: 1, 
+          duration: 0.4,
+          stagger: 0.1,
+          ease: "power3.out"
+        }
+      );
+
+      // Animate mobile chevron rotation
+      if (mobileChevronRef.current) {
+        gsap.to(mobileChevronRef.current, { rotation: 180, duration: 0.3, ease: "power3.out" });
+      }
     } else {
-      // Animate mobile menu items out
-      menuLinksRef.current.forEach((item, index) => {
-        if (item) {
-          item.style.transform = 'translateX(-20px)';
-          item.style.opacity = '0';
-          item.style.transition = `all 0.6s cubic-bezier(0.55, 0, 0.1, 1) ${index * 0.05}s`;
-        }
+      // Hide mobile dropdown
+      gsap.to(mobileDropdownRef.current, {
+        height: 0,
+        opacity: 0,
+        duration: 0.3,
+        ease: "power3.in"
       });
-    }
-  }, [isMobileMenuOpen]);
 
-  // Dropdown animation
-  useEffect(() => {
-    if (dropdownRef.current) {
-      if (isDropdownOpen) {
-        // Show dropdown with scale and fade animation
-        dropdownRef.current.style.display = 'flex';
-        dropdownRef.current.style.transform = 'translateY(-10px) scale(0.95)';
-        dropdownRef.current.style.opacity = '0';
-
-        // Force reflow
-        dropdownRef.current.offsetHeight;
-
-        dropdownRef.current.style.transition = 'all 0.3s cubic-bezier(0.23, 1, 0.32, 1)';
-        dropdownRef.current.style.transform = 'translateY(0px) scale(1)';
-        dropdownRef.current.style.opacity = '1';
-
-        // Animate dropdown items
-        dropdownItemsRef.current.forEach((item, index) => {
-          if (item) {
-            item.style.transform = 'translateY(-10px)';
-            item.style.opacity = '0';
-            item.style.transition = `all 0.4s cubic-bezier(0.23, 1, 0.32, 1) ${index * 0.08}s`;
-
-            // Force reflow
-            item.offsetHeight;
-
-            item.style.transform = 'translateY(0px)';
-            item.style.opacity = '1';
-          }
-        });
-      } else {
-        // Hide dropdown with reverse animation
-        dropdownRef.current.style.transition = 'all 0.2s cubic-bezier(0.55, 0, 0.1, 1)';
-        dropdownRef.current.style.transform = 'translateY(-10px) scale(0.95)';
-        dropdownRef.current.style.opacity = '0';
-
-        setTimeout(() => {
-          if (dropdownRef.current) {
-            dropdownRef.current.style.display = 'none';
-          }
-        }, 200);
+      // Animate mobile chevron rotation back
+      if (mobileChevronRef.current) {
+        gsap.to(mobileChevronRef.current, { rotation: 0, duration: 0.3, ease: "power3.out" });
       }
     }
-  }, [isDropdownOpen]);
+  }, [isMobileDropdownOpen, gsap]);
 
   const handleDropdownToggle = (): void => {
     setIsDropdownOpen(!isDropdownOpen);
@@ -247,7 +235,6 @@ const Header: React.FC = () => {
   };
 
   const handleMouseLeave = (): void => {
-    // Add a small delay before closing to prevent flickering
     hoverTimeoutRef.current = setTimeout(() => {
       setIsDropdownOpen(false);
     }, 150);
@@ -266,10 +253,8 @@ const Header: React.FC = () => {
     };
   }, []);
 
-
-
   return (
-    <div className="verysm:hidden xl:fixed sticky top-0 w-full z-50 bg-white">
+    <header className="verysm:hidden sticky  top-0 w-full z-50 bg-white">
       {/* Announcement Bar */}
       <div className="bg-black h-auto min-h-[32px] flex items-center justify-center text-white text-sm py-1 w-full">
         <p className="text-center px-2 sm:px-4 md:px-0 text-xs sm:text-sm">
@@ -279,13 +264,13 @@ const Header: React.FC = () => {
       </div>
 
       {/* Main Header */}
-      <header className="verysm:hidden fixed w-full bg-white border-b border-[#E8ECEF] border-opacity-30">
+      <header className="verysm:hidden sticky  w-full bg-white border-b border-[#E8ECEF] border-opacity-30">
         <div className="container mx-auto px-4">
           <nav className="flex items-center justify-between py-4">
             {/* Logo and Mobile Menu Button */}
             <div className="flex items-center gap-4">
               <button
-                className="p-2 lg:hidden"
+                className="p-2 lg:hidden hover:scale-110 transition-transform duration-200"
                 aria-label="Menu"
                 onClick={() => setIsMobileMenuOpen((open) => !open)}
                 aria-expanded={isMobileMenuOpen}
@@ -311,7 +296,16 @@ const Header: React.FC = () => {
                   className="text-gray-600 text-sm hover:text-black flex items-center gap-1 cursor-pointer py-2 px-1 transition-colors duration-200"
                   onClick={handleDropdownToggle}
                 >
-                  Shop <Icons.ChevronDown isOpen={isDropdownOpen} />
+                  Shop 
+                  <svg
+                    ref={chevronRef}
+                    width="15"
+                    height="15"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                  >
+                    <path d="M6 9L12 15L18 9" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                  </svg>
                 </div>
 
                 <div
@@ -352,10 +346,10 @@ const Header: React.FC = () => {
             </div>
 
             <div className="flex items-center gap-4">
-              <button className="p-2 lg:hidden hover:bg-gray-100 rounded-full transition-colors duration-200">
+              <button className="p-2 lg:hidden hover:bg-gray-100 hover:scale-110 rounded-full transition-all duration-200">
                 <Icons.Search />
               </button>
-              <button className="p-2 hover:bg-gray-100 rounded-full transition-colors duration-200">
+              <button className="p-2 hover:bg-gray-100 hover:scale-110 rounded-full transition-all duration-200">
                 <Icons.Cart />
               </button>
             </div>
@@ -363,25 +357,33 @@ const Header: React.FC = () => {
             {/* Mobile Menu */}
             <div
               id="mobile-menu"
-              className={`${isMobileMenuOpen ? 'translate-x-0' : '-translate-x-full'
-                } fixed top-[104px] left-0 w-64 h-screen bg-white transform transition-transform duration-500 ease-[cubic-bezier(0.23,1,0.32,1)] lg:hidden z-40 shadow-lg`}
+              ref={mobileMenuRef}
+              className="fixed top-[104px] left-0 w-auto h-screen bg-white transform -translate-x-full lg:hidden z-40 shadow-lg"
             >
-              <div className="px-4 py-6 space-y-4">
+              <div className="px-4 py-6 space-y-4 ">
                 {/* Mobile Shop Dropdown */}
                 <div className="block">
                   <div
-                    className="flex items-center justify-between text-gray-600 text-lg hover:text-black hover:bg-gray-50 px-2 py-1 rounded transition-colors duration-200 cursor-pointer"
+                    className="mobile-shop-trigger flex items-center justify-between text-gray-600 text-lg hover:text-black hover:bg-gray-50 px-2 py-1 rounded transition-colors duration-200 cursor-pointer "
                     onClick={handleMobileDropdownToggle}
                   >
                     <span>Shop</span>
-                    <Icons.ChevronDown isOpen={isMobileDropdownOpen} />
+                    <svg
+                      ref={mobileChevronRef}
+                      width="15"
+                      height="15"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                    >
+                      <path d="M6 9L12 15L18 9" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                    </svg>
                   </div>
 
                   {/* Mobile Dropdown Items */}
                   <div
                     ref={mobileDropdownRef}
-                    className="overflow-hidden transition-all duration-300 ease-in-out ml-4"
-                    style={{ maxHeight: '0px', opacity: 0 }}
+                    className="overflow-hidden ml-4"
+                    style={{ height: '0px', opacity: 0 }}
                   >
                     <div className="py-2 space-y-2">
                       {['Gym', 'Formal', 'Party', 'Casual'].map((item, index) => (
@@ -390,7 +392,6 @@ const Header: React.FC = () => {
                           ref={(el) => { mobileDropdownItemsRef.current[index] = el; }}
                           href="#"
                           className="block text-gray-500 text-base hover:text-black hover:bg-gray-50 px-3 py-1 rounded transition-colors duration-200"
-                          style={{ opacity: 0, transform: 'translateX(-20px)' }}
                         >
                           {item}
                         </a>
@@ -406,7 +407,6 @@ const Header: React.FC = () => {
                     ref={(el) => { menuLinksRef.current[index + 1] = el; }}
                     href="#"
                     className="block text-gray-600 text-lg hover:text-black hover:bg-gray-50 px-2 py-1 rounded transition-colors duration-200"
-                    style={{ opacity: 0, transform: 'translateX(-20px)' }}
                   >
                     {item}
                   </a>
@@ -416,7 +416,7 @@ const Header: React.FC = () => {
           </nav>
         </div>
       </header>
-    </div>
+    </header>
   );
 };
 

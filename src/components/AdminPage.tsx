@@ -5,18 +5,17 @@ import items from "../../items.json"
 // Simulated JSON data (in a real app, this would be imported from a separate file)
 const initialItemsData = items;
 
+type FAQ = {
+    question: string;
+    answer: string;
+};
+
 type Review = {
     name: string;
     comment: string;
     date: string;
     rating: number;
 };
-
-type FAQ = {
-    question: string;
-    answer: string;
-};
-
 type Item = {
     id: number;
     name: string;
@@ -208,24 +207,24 @@ const AdminDashboard: React.FC = () => {
             alert("Please fill in all required fields (name, price, colors)");
             return;
         }
-        
+
         if (editingItem) {
             // Update existing item
             setItems(items.map(item =>
                 item.id === editingItem.id
-                ? { ...formData as Item, id: editingItem.id }
-                : item
+                    ? { ...formData as Item, id: editingItem.id }
+                    : item
             ));
             setEditingItem(null);
         } else {
             // Add new item
             const newId = items.length ? Math.max(...items.map(i => i.id)) + 1 : 1;
-            setItems([...items, { ...formData as Item, id: newId, date: new Date().toDateString()}]);
+            setItems([...items, { ...formData as Item, id: newId, date: new Date().toDateString() }]);
         }
-        
+
         resetForm();
         setActiveTab("manage");
-        // console.log(items)
+        console.log(items)
     };
 
     const handleEditItem = (item: Item) => {
@@ -296,7 +295,7 @@ const AdminDashboard: React.FC = () => {
     }
 
     return (
-        <div className="min-h-screen bg-gray-50 xl:mt-26">
+        <div className="min-h-screen bg-gray-50 ">
             {/* Header */}
             <header className="bg-white shadow-sm border-b">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -706,6 +705,67 @@ const AdminDashboard: React.FC = () => {
                                     <p className="text-gray-500 text-sm">Add colors first to manage images</p>
                                 )}
                             </div>
+
+                            <div>
+                                <label className="block text-sm font-medium text-gray-700 mb-2">FAQs</label>
+
+                                {(formData.faq ?? []).map((faqItem, idx) => (
+                                    <div key={idx} className="mb-4 border p-4 rounded-lg bg-gray-50">
+                                        <input
+                                            type="text"
+                                            value={faqItem.question}
+                                            onChange={(e) =>
+                                                setFormData((prev) => {
+                                                    const next = [...(prev.faq ?? [])];
+                                                    next[idx] = { ...next[idx], question: e.target.value };
+                                                    return { ...prev, faq: next };
+                                                })
+                                            }
+                                            placeholder="Question"
+                                            className="w-full mb-2 px-3 py-2 border border-gray-300 rounded-lg"
+                                        />
+                                        <input
+                                            type="text"
+                                            value={faqItem.answer}
+                                            onChange={(e) =>
+                                                setFormData((prev) => {
+                                                    const next = [...(prev.faq ?? [])];
+                                                    next[idx] = { ...next[idx], answer: e.target.value };
+                                                    return { ...prev, faq: next };
+                                                })
+                                            }
+                                            placeholder="Answer"
+                                            className="w-full px-3 py-2 border border-gray-300 rounded-lg"
+                                        />
+                                        <button
+                                            type="button"
+                                            onClick={() =>
+                                                setFormData((prev) => ({
+                                                    ...prev,
+                                                    faq: (prev.faq ?? []).filter((_, i) => i !== idx),
+                                                }))
+                                            }
+                                            className="mt-2 text-red-600 hover:text-red-800"
+                                        >
+                                            Remove
+                                        </button>
+                                    </div>
+                                ))}
+
+                                <button
+                                    type="button"
+                                    onClick={() =>
+                                        setFormData((prev) => ({
+                                            ...prev,
+                                            faq: [...(prev.faq ?? []), { question: "", answer: "" }],
+                                        }))
+                                    }
+                                    className="px-4 py-2 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700 transition-colors"
+                                >
+                                    Add FAQ
+                                </button>
+                            </div>
+
 
                             {/* Action Buttons */}
                             <div className="flex gap-4 pt-6 border-t border-gray-200">

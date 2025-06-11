@@ -1,147 +1,191 @@
 [
-    {
+  {
+    "id": 1,
+    "name": "Polo T-shirt",
+    "price": 49.99,
+    "offer_price": 44.99,
+    "stars": 4.2,
+    "type": "Jeans",
+    "dress_style": "Casual",
+    "colors": ["Blue", "Red"],
+    "quantity": 30,
+    "sizes": ["32", "34", "36", "38"],
+    "description": "Turquoise Cotton Lycra Polo Shirt.",
+    "images": {
+      "Red": [
+        "https://www.britishhouse.shop/cdn/shop/products/00_505b9ab3-f951-4635-a507-12d2f4c0a817_1800x1800.jpg?v=1658950890",
+        "https://www.britishhouse.shop/cdn/shop/products/014-POCL019_3_1800x1800.png?v=1679511188",
+        "https://www.britishhouse.shop/cdn/shop/files/020-POTO070_1_94cf973c-65f3-4ebf-b525-89e584c0e3a2_1800x1800.jpg?v=1748429179"
+      ],
+      "Blue": [
+        "https://www.britishhouse.shop/cdn/shop/products/new-polo-lycra-5_1800x1800.jpg?v=1658950662",
+        "https://www.britishhouse.shop/cdn/shop/products/014-POCL018_1800x1800.png?v=1679511621",
+        "https://www.britishhouse.shop/cdn/shop/products/014-POCL018_1_1800x1800.png?v=1679511621"
+      ]
+    },
+    "reviews": [
+      {
         "id": 1,
-        "name": "Polo T-shirt",
-        "price": 49.99,
-        "offer_price": 44.99,
-        "stars": 4.2,
-        "type": "Jeans",
-        "dress_style": "Casual",
-        "colors": [
-            "Blue",
-            "Red"
-        ],
-        "quantity": 30,
-        "sizes": [
-            "32",
-            "34",
-            "36",
-            "38"
-        ],
-        "description": "Turquoise Cotton Lycra Polo Shirt.",
-        "images": {
-            "Red": [
-                "https://www.britishhouse.shop/cdn/shop/products/00_505b9ab3-f951-4635-a507-12d2f4c0a817_1800x1800.jpg?v=1658950890",
-                "https://www.britishhouse.shop/cdn/shop/products/014-POCL019_3_1800x1800.png?v=1679511188",
-                "https://www.britishhouse.shop/cdn/shop/files/020-POTO070_1_94cf973c-65f3-4ebf-b525-89e584c0e3a2_1800x1800.jpg?v=1748429179"
-            ],
-            "Blue": [
-                "https://www.britishhouse.shop/cdn/shop/products/new-polo-lycra-5_1800x1800.jpg?v=1658950662",
-                "https://www.britishhouse.shop/cdn/shop/products/014-POCL018_1800x1800.png?v=1679511621",
-                "https://www.britishhouse.shop/cdn/shop/products/014-POCL018_1_1800x1800.png?v=1679511621"
-            ]
-        },
-        "reviews": [],
-        "faq": [],
-        "date": "Tue Jun 10 2025"
-    },
-    {
-        "name": "MB3 Mens 901",
-        "price": 232,
-        "offer_price": 208,
-        "stars": 4.2,
-        "type": "T-shirt",
-        "dress_style": "Gym",
-        "colors": [
-            "Black"
-        ],
-        "quantity": 5,
-        "sizes": [
-            "S",
-            "M"
-        ],
-        "description": "MB3 Mens 901 Base Layer Top (pack of 1)",
-        "images": {
-            "Black": [
-                "https://m.media-amazon.com/images/I/41SU+6IsrnL._AC_SX522_.jpg",
-                "https://m.media-amazon.com/images/I/31pFBOun-bL._AC_SX679_.jpg",
-                "https://m.media-amazon.com/images/I/31aXgGRb+1L._AC_SY500_.jpg"
-            ]
-        },
-        "reviews": [],
-        "faq": [],
+        "name": "Sarah M.",
+        "rating": 5,
+        "date": "August 14, 2023",
+        "review": "I'm blown away by the quality and style of the clothes I received from Shop.co. From casual wear to elegant dresses, every piece I've bought has exceeded my expectations."
+      },
+      {
         "id": 2,
-        "date": "Tue Jun 10 2025"
-    },
-    {
-        "name": "Dry Men's T-shirt",
-        "price": 500,
-        "offer_price": 450,
-        "stars": 0,
-        "type": "T-shirt",
-        "dress_style": "Gym",
-        "colors": [
-            "Blue",
-            "Red"
-        ],
-        "quantity": 9,
-        "sizes": [],
-        "description": "Dry Men's Running Breathable T-shirt - Prussian Blue",
-        "images": {
-            "Blue": [
-                "https://contents.mediadecathlon.com/p2616056/1cr1/k$0111f9caa5e70aeaf1feeeddbd7f04d2/dry-men-s-running-breathable-t-shirt-neon-coral-pink.jpg?format=auto&f=768x0"
-            ],
-            "Red": [
-                "https://contents.mediadecathlon.com/p2397142/1cr1/k$6d7699bc658b6cb5c0c6912c3ed1d9e1/dry-men-s-running-breathable-t-shirt-neon-coral-pink.jpg?format=auto&f=768x0"
-            ]
-        },
-        "reviews": [],
-        "faq": [],
+        "name": "Alex K.",
+        "rating": 5,
+        "date": "August 12, 2023",
+        "review": "Finding clothes that align with my personal style used to be a challenge until I discovered Shop.co. The range of options they offer is truly remarkable, catering to a variety of tastes and occasions."
+      },
+      {
         "id": 3,
-        "date": "Tue Jun 10 2025"
-    },
-    {
-        "name": "Men Suit ",
-        "price": 11990,
-        "offer_price": 11990,
-        "stars": 0,
-        "type": "T-shirt",
-        "dress_style": "Casual",
-        "colors": [
-            "Blue"
-        ],
-        "quantity": 2,
-        "sizes": [
-            "XL",
-            "XXL"
-        ],
-        "description": "Checks Chanee Suit - MSU374",
-        "images": {
-            "Blue": [
-                "https://nagahomme.com/cdn/shop/files/MSU374-007_4.png?v=1745837089"
-            ]
-        },
-        "reviews": [],
-        "faq": [],
+        "name": "James L.",
+        "rating": 4,
+        "date": "August 10, 2023",
+        "review": "As someone who's always on the lookout for unique fashion pieces, I'm thrilled to have stumbled upon Shop.co. The selection of clothes is not only diverse but also on-point with the latest trends."
+      },
+      {
         "id": 4,
-        "date": "Tue Jun 10 2025"
+        "name": "Samantha D.",
+        "rating": 5,
+        "date": "August 8, 2023",
+        "review": "I absolutely love this t-shirt! The fabric is incredibly soft and the fit is perfect. I've received so many compliments when wearing it. Definitely ordering more colors!"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What is the return policy?",
+        "answer": "We offer a 30-day return policy for all unworn items with tags attached."
+      },
+      {
+        "question": "What is the return policy?",
+        "answer": "We offer a 30-day return policy for all unworn items with tags attached."
+      },
+      {
+        "question": "What is the return policy?",
+        "answer": "We offer a 30-day return policy for all unworn items with tags attached."
+      }
+    ],
+    "date": "Tue Jun 10 2025"
+  },
+  {
+    "name": "MB3 Mens 901",
+    "price": 232,
+    "offer_price": 208,
+    "stars": 4.2,
+    "type": "T-shirt",
+    "dress_style": "Gym",
+    "colors": ["Black"],
+    "quantity": 5,
+    "sizes": ["S", "M"],
+    "description": "MB3 Mens 901 Base Layer Top (pack of 1)",
+    "images": {
+      "Black": [
+        "https://m.media-amazon.com/images/I/41SU+6IsrnL._AC_SX522_.jpg",
+        "https://m.media-amazon.com/images/I/31pFBOun-bL._AC_SX679_.jpg",
+        "https://m.media-amazon.com/images/I/31aXgGRb+1L._AC_SY500_.jpg"
+      ]
     },
-    {
-        "name": "Graphic Hoodie",
-        "price": 2700,
-        "offer_price": 1080,
-        "stars": 0,
-        "type": "Hoodie",
-        "dress_style": "Casual",
-        "colors": [
-            "red"
-        ],
-        "quantity": 2,
-        "sizes": [
-            "S",
-            "M",
-            "XL"
-        ],
-        "description": "AE Super Soft Graphic Hoodie",
-        "images": {
-            "red": [
-                "https://media.alshaya.com/adobe/assets/urn:aaid:aem:37118b2b-6780-4ad3-b58f-b180ff21e7c2/as/AR-0193-2194-647_5.jpg?height=630",
-                "https://media.alshaya.com/adobe/assets/urn:aaid:aem:6bb313df-7d62-4217-9da6-cb960c7877a6/as/AR-0193-2194-647_6.jpg?height=630"
-            ]
-        },
-        "reviews": [],
-        "faq": [],
-        "id": 5,
-        "date": "Tue Jun 10 2025"
-    }
+    "reviews": [],
+    "faqs": [],
+    "id": 2,
+    "date": "Tue Jun 10 2025"
+  },
+  {
+    "name": "Dry Men's T-shirt",
+    "price": 500,
+    "offer_price": 450,
+    "stars": 0,
+    "type": "T-shirt",
+    "dress_style": "Gym",
+    "colors": ["Blue", "Red"],
+    "quantity": 9,
+    "sizes": [],
+    "description": "Dry Men's Running Breathable T-shirt - Prussian Blue",
+    "images": {
+      "Blue": [
+        "https://contents.mediadecathlon.com/p2616056/1cr1/k$0111f9caa5e70aeaf1feeeddbd7f04d2/dry-men-s-running-breathable-t-shirt-neon-coral-pink.jpg?format=auto&f=768x0"
+      ],
+      "Red": [
+        "https://contents.mediadecathlon.com/p2397142/1cr1/k$6d7699bc658b6cb5c0c6912c3ed1d9e1/dry-men-s-running-breathable-t-shirt-neon-coral-pink.jpg?format=auto&f=768x0"
+      ]
+    },
+    "reviews": [
+      {
+        "id": 1,
+        "name": "Sarah M.",
+        "rating": 5,
+        "date": "August 14, 2023",
+        "review": "I'm blown away by the quality and style of the clothes I received from Shop.co. From casual wear to elegant dresses, every piece I've bought has exceeded my expectations."
+      },
+      {
+        "id": 2,
+        "name": "Alex K.",
+        "rating": 5,
+        "date": "August 12, 2023",
+        "review": "Finding clothes that align with my personal style used to be a challenge until I discovered Shop.co. The range of options they offer is truly remarkable, catering to a variety of tastes and occasions."
+      },
+      {
+        "id": 3,
+        "name": "James L.",
+        "rating": 4,
+        "date": "August 10, 2023",
+        "review": "As someone who's always on the lookout for unique fashion pieces, I'm thrilled to have stumbled upon Shop.co. The selection of clothes is not only diverse but also on-point with the latest trends."
+      },
+      {
+        "id": 4,
+        "name": "Samantha D.",
+        "rating": 5,
+        "date": "August 8, 2023",
+        "review": "I absolutely love this t-shirt! The fabric is incredibly soft and the fit is perfect. I've received so many compliments when wearing it. Definitely ordering more colors!"
+      }
+    ],
+    "faqs": [],
+    "id": 3,
+    "date": "Tue Jun 10 2025"
+  },
+  {
+    "name": "Men Suit ",
+    "price": 11990,
+    "offer_price": 11990,
+    "stars": 0,
+    "type": "T-shirt",
+    "dress_style": "Casual",
+    "colors": ["Blue"],
+    "quantity": 2,
+    "sizes": ["XL", "XXL"],
+    "description": "Checks Chanee Suit - MSU374",
+    "images": {
+      "Blue": [
+        "https://nagahomme.com/cdn/shop/files/MSU374-007_4.png?v=1745837089"
+      ]
+    },
+    "reviews": [],
+    "faqs": [],
+    "id": 4,
+    "date": "Tue Jun 10 2025"
+  },
+  {
+    "name": "Graphic Hoodie",
+    "price": 2700,
+    "offer_price": 1080,
+    "stars": 0,
+    "type": "Hoodie",
+    "dress_style": "Casual",
+    "colors": ["red"],
+    "quantity": 2,
+    "sizes": ["S", "M", "XL"],
+    "description": "AE Super Soft Graphic Hoodie",
+    "images": {
+      "red": [
+        "https://media.alshaya.com/adobe/assets/urn:aaid:aem:37118b2b-6780-4ad3-b58f-b180ff21e7c2/as/AR-0193-2194-647_5.jpg?height=630",
+        "https://media.alshaya.com/adobe/assets/urn:aaid:aem:6bb313df-7d62-4217-9da6-cb960c7877a6/as/AR-0193-2194-647_6.jpg?height=630"
+      ]
+    },
+    "reviews": [],
+    "faqs": [],
+    "id": 5,
+    "date": "Tue Jun 10 2025"
+  }
 ]

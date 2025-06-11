@@ -10,13 +10,13 @@ const Icons = {
 
 const HeroSection = () => {
     return (
-        <section className='lg:mt-0 mt-10 soft-gray flex items-center overflow-hidden'>
+        <section className=' soft-gray flex items-center overflow-hidden'>
             {/* Background decorative sparkles */}
 
             <div className="container mx-auto lg:px-10 px-5 min-h-auto">
                 <div className="flex flex-col lg:flex-row items-center justify-between h-full">
                     {/* Left Section */}
-                    <div className="lg:w-1/2 mb-12 lg:mb-0 mt-10">
+                    <div className="lg:w-1/2 mb-12 lg:mb-0">
                         <h1 className="integral demibold text-4xl lg:text-7xl lg:mb-6 mb-2 text-black whitespace-nowrap">
                             FIND CLOTHES<br />
                             THAT MATCHES<br />
