@@ -50,18 +50,26 @@ const FilteredProductList = ({ filter_type }: FilteredProductListProps) => {
     let result = [...items];
 
     if (filter_type === 'newest') {
-      result = result
-        .filter(item => item.quantity > 0)
-        .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
-    }
+      const sevenDaysAgo = new Date();
+      sevenDaysAgo.setDate(sevenDaysAgo.getDate() - 7);
 
+      result = result.filter(item => {
+        const itemDate = new Date(item.date);
+        return item.quantity > 0 && itemDate >= sevenDaysAgo;
+      });
+    }
     if (filter_type === 'top_selling') {
       result = result
         .filter(item => item.quantity < 10 && item.quantity > 0)
         .sort((a, b) => a.quantity - b.quantity);
+    } else {
+      result = result
+        .filter(item => item.quantity > 0)
+        .filter(item => item.type === filter_type);
     }
 
-    setFiltered(result.slice(0, 4));
+
+    setFiltered(result.slice(1, 5) as Product[]);
   }, [filter_type]);
 
   return (

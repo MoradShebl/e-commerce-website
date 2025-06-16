@@ -18,6 +18,7 @@ const ProductCard = ({ images, name, stars, offer_price, price }: ProductCardPro
   const imgRef = useRef<HTMLImageElement>(null);
   const containerRef = useRef<HTMLDivElement>(null);
   const indicatorRefs = useRef<HTMLDivElement[]>([]);
+  const URLname = name.toLowerCase().replace(/\s+/g, '-')
 
   useEffect(() => {
     if (price > 0) {
@@ -51,7 +52,7 @@ const ProductCard = ({ images, name, stars, offer_price, price }: ProductCardPro
 
         // Animate new image in
         gsap.fromTo(imgRef.current,
-          { opacity: 0},
+          { opacity: 0 },
           {
             opacity: 1,
             duration: 0,
@@ -98,9 +99,9 @@ const ProductCard = ({ images, name, stars, offer_price, price }: ProductCardPro
   };
 
   return (
-    <div
+    <div onClick={() => window.location.href =`/products/${URLname}`}
       ref={containerRef}
-      className="bg-white rounded-lg overflow-hidden"
+      className="bg-white rounded-lg overflow-hidden cursor-pointer"
       onMouseLeave={handleCardLeave}
     >
       <div className="bg-gray-100 aspect-square flex items-center justify-center overflow-hidden h-65 w-full relative group">
@@ -134,8 +135,8 @@ const ProductCard = ({ images, name, stars, offer_price, price }: ProductCardPro
                     if (el) indicatorRefs.current[index] = el;
                   }}
                   className={`w-2 h-2 rounded-full transition-all duration-300 cursor-pointer ${index === currentIndex
-                      ? 'bg-white shadow-lg'
-                      : 'bg-white bg-opacity-60 hover:bg-opacity-80'
+                    ? 'bg-white shadow-lg'
+                    : 'bg-white bg-opacity-60 hover:bg-opacity-80'
                     }`}
                   onClick={() => transitionToImage(index)}
                   style={{

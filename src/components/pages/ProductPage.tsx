@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Star, Plus, Minus } from 'lucide-react';
 import items from "../../../items.json"
 import { useParams } from 'react-router-dom';
+import ShowCase from '../ShowCase';
 
 const ProductPage: React.FC = () => {
     const { name: productName } = useParams<{ name: string }>();
@@ -10,7 +11,7 @@ const ProductPage: React.FC = () => {
     const [quantity, setQuantity] = useState<number>(1);
     const [currentImageIndex, setCurrentImageIndex] = useState<number>(0);
     const [product, setProduct] = useState<any>(null);
-    const [activeTab, setActiveTab] = useState<'reviews' | 'faq'>('reviews');
+    const [activeTab, setActiveTab] = useState<'reviews'>('reviews');
     const [reviewStars, setReviewStars] = useState(5)
     const [displayPostReview, setDisplayPostReview] = useState(false)
     const [reviewsToShow, setReviewsToShow] = useState(4)
@@ -290,7 +291,7 @@ const ProductPage: React.FC = () => {
                         >
                             All Reviews {`(${product.reviews.length})`}
                         </button>
-                        <button
+                        {/* <button
                             onClick={() => setActiveTab('faq')}
                             className={`pb-4 whitespace-nowrap font-medium transition-colors ${activeTab === 'faq'
                                 ? 'border-b-2 border-black text-black'
@@ -298,7 +299,7 @@ const ProductPage: React.FC = () => {
                                 }`}
                         >
                             FAQs
-                        </button>
+                        </button> */}
                     </div>
 
                     {activeTab === 'reviews' && (
@@ -352,21 +353,9 @@ const ProductPage: React.FC = () => {
 
                         </div>
                     )}
-
-                    {activeTab === 'faq' && (
-                        <div className="space-y-4">
-                            {product.faq.length === 0 && <div>Not added yet</div>}
-                            {product.faq.map((faq: any, index: number) => (
-                                <div key={index} className="border border-gray-200 rounded-lg p-4 lg:p-6">
-                                    <h4 className="font-medium mb-2">{faq.question}</h4>
-                                    <p className="text-gray-600 text-sm lg:text-base">
-                                        {faq.answer}
-                                    </p>
-                                </div>
-                            ))}
-                        </div>
-                    )}
                 </div>
+                {/* Show Case */}
+                <ShowCase name="You might also like" filter_type={product.type} />
             </div>
         </section>
     );

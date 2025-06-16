@@ -4,7 +4,6 @@ const Footer= () => {
   const [email, setEmail] = useState('');
 
   const handleSubmit = () => {
-    console.log('Subscribing email:', email);
     setEmail('');
   };
 
