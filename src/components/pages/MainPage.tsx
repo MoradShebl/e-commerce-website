@@ -15,7 +15,7 @@ const MainPage = () => {
           BROWSE BY DRESS STYLE
         </h2>
 
-        <div className="flex w-full gap-5 flex-col md:flex-row md:flex-wrap ">
+        <div onClick={() => window.location.href =`/shop/Casual`} className="flex w-full gap-5 flex-col md:flex-row md:flex-wrap ">
           <div className="mb-5 flex flex-col md:flex-row gap-5 w-full ">
             <div
               className={"relative h-64 rounded-xl overflow-hidden cursor-pointer w-full flex justify-around bg-white hover:scale-103 transition-transform duration-300"}
