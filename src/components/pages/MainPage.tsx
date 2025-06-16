@@ -7,7 +7,6 @@ const MainPage = () => {
     <>
       <HeroSection />
       <Brands />
-      <ShowCase name="NEW ARRIVALS" filter_type="newest" border />
       <ShowCase name="Top Selling" filter_type="top_selling" />
 
 

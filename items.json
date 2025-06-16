@@ -1,515 +1,236 @@
 [
-    {
-        "id": 1,
-        "name": "Polo T-shirt",
-        "price": 49.99,
-        "offer_price": 44.99,
-        "stars": 4.2,
-        "type": "Jeans",
-        "dress_style": "Casual",
-        "colors": [
-            "Blue",
-            "Red"
-        ],
-        "quantity": 30,
-        "sizes": [
-            "32",
-            "34",
-            "36",
-            "38"
-        ],
-        "description": "Turquoise Cotton Lycra Polo Shirt.",
-        "images": {
-            "Red": [
-                "https://www.britishhouse.shop/cdn/shop/products/00_505b9ab3-f951-4635-a507-12d2f4c0a817_1800x1800.jpg?v=1658950890",
-                "https://www.britishhouse.shop/cdn/shop/products/014-POCL019_3_1800x1800.png?v=1679511188",
-                "https://www.britishhouse.shop/cdn/shop/files/020-POTO070_1_94cf973c-65f3-4ebf-b525-89e584c0e3a2_1800x1800.jpg?v=1748429179"
-            ],
-            "Blue": [
-                "https://www.britishhouse.shop/cdn/shop/products/new-polo-lycra-5_1800x1800.jpg?v=1658950662",
-                "https://www.britishhouse.shop/cdn/shop/products/014-POCL018_1800x1800.png?v=1679511621",
-                "https://www.britishhouse.shop/cdn/shop/products/014-POCL018_1_1800x1800.png?v=1679511621"
-            ]
-        },
-        "reviews": [
-            {
-                "id": 1,
-                "name": "Sarah M.",
-                "rating": 5,
-                "date": "August 14, 2023",
-                "review": "I'm blown away by the quality and style of the clothes I received from Shop.co. From casual wear to elegant dresses, every piece I've bought has exceeded my expectations."
-            },
-            {
-                "id": 2,
-                "name": "Alex K.",
-                "rating": 5,
-                "date": "August 12, 2023",
-                "review": "Finding clothes that align with my personal style used to be a challenge until I discovered Shop.co. The range of options they offer is truly remarkable, catering to a variety of tastes and occasions."
-            },
-            {
-                "id": 3,
-                "name": "James L.",
-                "rating": 4,
-                "date": "August 10, 2023",
-                "review": "As someone who's always on the lookout for unique fashion pieces, I'm thrilled to have stumbled upon Shop.co. The selection of clothes is not only diverse but also on-point with the latest trends."
-            },
-            {
-                "id": 4,
-                "name": "Samantha D.",
-                "rating": 5,
-                "date": "August 8, 2023",
-                "review": "I absolutely love this t-shirt! The fabric is incredibly soft and the fit is perfect. I've received so many compliments when wearing it. Definitely ordering more colors!"
-            }
-        ],
-        "faqs": [
-            {
-                "question": "What is the return policy?",
-                "answer": "We offer a 30-day return policy for all unworn items with tags attached."
-            },
-            {
-                "question": "What is the return policy?",
-                "answer": "We offer a 30-day return policy for all unworn items with tags attached."
-            },
-            {
-                "question": "What is the return policy?",
-                "answer": "We offer a 30-day return policy for all unworn items with tags attached."
-            }
-        ],
-        "date": "Tue Jun 10 2025"
+  {
+    "id": 1,
+    "name": "Polo T-shirt",
+    "price": 49.99,
+    "offer_price": 44.99,
+    "stars": 4.2,
+    "type": "T-shirt",
+    "dress_style": "Casual",
+    "colors": ["Blue", "Red"],
+    "quantity": 30,
+    "sizes": ["32", "34", "36", "38"],
+    "description": "Turquoise Cotton Lycra Polo Shirt.",
+    "images": {
+      "Red": [
+        "https://www.britishhouse.shop/cdn/shop/products/00_505b9ab3-f951-4635-a507-12d2f4c0a817_1800x1800.jpg?v=1658950890",
+        "https://www.britishhouse.shop/cdn/shop/products/014-POCL019_3_1800x1800.png?v=1679511188",
+        "https://www.britishhouse.shop/cdn/shop/files/020-POTO070_1_94cf973c-65f3-4ebf-b525-89e584c0e3a2_1800x1800.jpg?v=1748429179"
+      ],
+      "Blue": [
+        "https://www.britishhouse.shop/cdn/shop/products/new-polo-lycra-5_1800x1800.jpg?v=1658950662",
+        "https://www.britishhouse.shop/products/014-POCL018_1800x1800.png?v=1679511621",
+        "https://www.britishhouse.shop/cdn/shop/products/014-POCL018_1_1800x1800.png?v=1679511621"
+      ]
     },
-    {
+    "reviews": [
+      {
         "id": 1,
-        "name": "Polo T-shirt",
-        "price": 49.99,
-        "offer_price": 44.99,
-        "stars": 4.2,
-        "type": "Jeans",
-        "dress_style": "Casual",
-        "colors": [
-            "Blue",
-            "Red"
-        ],
-        "quantity": 30,
-        "sizes": [
-            "32",
-            "34",
-            "36",
-            "38"
-        ],
-        "description": "Turquoise Cotton Lycra Polo Shirt.",
-        "images": {
-            "Red": [
-                "https://www.britishhouse.shop/cdn/shop/products/00_505b9ab3-f951-4635-a507-12d2f4c0a817_1800x1800.jpg?v=1658950890",
-                "https://www.britishhouse.shop/cdn/shop/products/014-POCL019_3_1800x1800.png?v=1679511188",
-                "https://www.britishhouse.shop/cdn/shop/files/020-POTO070_1_94cf973c-65f3-4ebf-b525-89e584c0e3a2_1800x1800.jpg?v=1748429179"
-            ],
-            "Blue": [
-                "https://www.britishhouse.shop/cdn/shop/products/new-polo-lycra-5_1800x1800.jpg?v=1658950662",
-                "https://www.britishhouse.shop/cdn/shop/products/014-POCL018_1800x1800.png?v=1679511621",
-                "https://www.britishhouse.shop/cdn/shop/products/014-POCL018_1_1800x1800.png?v=1679511621"
-            ]
-        },
-        "reviews": [
-            {
-                "id": 1,
-                "name": "Sarah M.",
-                "rating": 5,
-                "date": "August 14, 2023",
-                "review": "I'm blown away by the quality and style of the clothes I received from Shop.co. From casual wear to elegant dresses, every piece I've bought has exceeded my expectations."
-            },
-            {
-                "id": 2,
-                "name": "Alex K.",
-                "rating": 5,
-                "date": "August 12, 2023",
-                "review": "Finding clothes that align with my personal style used to be a challenge until I discovered Shop.co. The range of options they offer is truly remarkable, catering to a variety of tastes and occasions."
-            },
-            {
-                "id": 3,
-                "name": "James L.",
-                "rating": 4,
-                "date": "August 10, 2023",
-                "review": "As someone who's always on the lookout for unique fashion pieces, I'm thrilled to have stumbled upon Shop.co. The selection of clothes is not only diverse but also on-point with the latest trends."
-            },
-            {
-                "id": 4,
-                "name": "Samantha D.",
-                "rating": 5,
-                "date": "August 8, 2023",
-                "review": "I absolutely love this t-shirt! The fabric is incredibly soft and the fit is perfect. I've received so many compliments when wearing it. Definitely ordering more colors!"
-            }
-        ],
-        "faqs": [
-            {
-                "question": "What is the return policy?",
-                "answer": "We offer a 30-day return policy for all unworn items with tags attached."
-            },
-            {
-                "question": "What is the return policy?",
-                "answer": "We offer a 30-day return policy for all unworn items with tags attached."
-            },
-            {
-                "question": "What is the return policy?",
-                "answer": "We offer a 30-day return policy for all unworn items with tags attached."
-            }
-        ],
-        "date": "Tue Jun 10 2025"
-    },
-    {
-        "id": 1,
-        "name": "Polo T-shirt",
-        "price": 49.99,
-        "offer_price": 44.99,
-        "stars": 4.2,
-        "type": "Jeans",
-        "dress_style": "Casual",
-        "colors": [
-            "Blue",
-            "Red"
-        ],
-        "quantity": 30,
-        "sizes": [
-            "32",
-            "34",
-            "36",
-            "38"
-        ],
-        "description": "Turquoise Cotton Lycra Polo Shirt.",
-        "images": {
-            "Red": [
-                "https://www.britishhouse.shop/cdn/shop/products/00_505b9ab3-f951-4635-a507-12d2f4c0a817_1800x1800.jpg?v=1658950890",
-                "https://www.britishhouse.shop/cdn/shop/products/014-POCL019_3_1800x1800.png?v=1679511188",
-                "https://www.britishhouse.shop/cdn/shop/files/020-POTO070_1_94cf973c-65f3-4ebf-b525-89e584c0e3a2_1800x1800.jpg?v=1748429179"
-            ],
-            "Blue": [
-                "https://www.britishhouse.shop/cdn/shop/products/new-polo-lycra-5_1800x1800.jpg?v=1658950662",
-                "https://www.britishhouse.shop/cdn/shop/products/014-POCL018_1800x1800.png?v=1679511621",
-                "https://www.britishhouse.shop/cdn/shop/products/014-POCL018_1_1800x1800.png?v=1679511621"
-            ]
-        },
-        "reviews": [
-            {
-                "id": 1,
-                "name": "Sarah M.",
-                "rating": 5,
-                "date": "August 14, 2023",
-                "review": "I'm blown away by the quality and style of the clothes I received from Shop.co. From casual wear to elegant dresses, every piece I've bought has exceeded my expectations."
-            },
-            {
-                "id": 2,
-                "name": "Alex K.",
-                "rating": 5,
-                "date": "August 12, 2023",
-                "review": "Finding clothes that align with my personal style used to be a challenge until I discovered Shop.co. The range of options they offer is truly remarkable, catering to a variety of tastes and occasions."
-            },
-            {
-                "id": 3,
-                "name": "James L.",
-                "rating": 4,
-                "date": "August 10, 2023",
-                "review": "As someone who's always on the lookout for unique fashion pieces, I'm thrilled to have stumbled upon Shop.co. The selection of clothes is not only diverse but also on-point with the latest trends."
-            },
-            {
-                "id": 4,
-                "name": "Samantha D.",
-                "rating": 5,
-                "date": "August 8, 2023",
-                "review": "I absolutely love this t-shirt! The fabric is incredibly soft and the fit is perfect. I've received so many compliments when wearing it. Definitely ordering more colors!"
-            }
-        ],
-        "faqs": [
-            {
-                "question": "What is the return policy?",
-                "answer": "We offer a 30-day return policy for all unworn items with tags attached."
-            },
-            {
-                "question": "What is the return policy?",
-                "answer": "We offer a 30-day return policy for all unworn items with tags attached."
-            },
-            {
-                "question": "What is the return policy?",
-                "answer": "We offer a 30-day return policy for all unworn items with tags attached."
-            }
-        ],
-        "date": "Tue Jun 10 2025"
-    },
-    {
-        "id": 1,
-        "name": "Polo T-shirt",
-        "price": 49.99,
-        "offer_price": 44.99,
-        "stars": 4.2,
-        "type": "Jeans",
-        "dress_style": "Casual",
-        "colors": [
-            "Blue",
-            "Red"
-        ],
-        "quantity": 30,
-        "sizes": [
-            "32",
-            "34",
-            "36",
-            "38"
-        ],
-        "description": "Turquoise Cotton Lycra Polo Shirt.",
-        "images": {
-            "Red": [
-                "https://www.britishhouse.shop/cdn/shop/products/00_505b9ab3-f951-4635-a507-12d2f4c0a817_1800x1800.jpg?v=1658950890",
-                "https://www.britishhouse.shop/cdn/shop/products/014-POCL019_3_1800x1800.png?v=1679511188",
-                "https://www.britishhouse.shop/cdn/shop/files/020-POTO070_1_94cf973c-65f3-4ebf-b525-89e584c0e3a2_1800x1800.jpg?v=1748429179"
-            ],
-            "Blue": [
-                "https://www.britishhouse.shop/cdn/shop/products/new-polo-lycra-5_1800x1800.jpg?v=1658950662",
-                "https://www.britishhouse.shop/cdn/shop/products/014-POCL018_1800x1800.png?v=1679511621",
-                "https://www.britishhouse.shop/cdn/shop/products/014-POCL018_1_1800x1800.png?v=1679511621"
-            ]
-        },
-        "reviews": [
-            {
-                "id": 1,
-                "name": "Sarah M.",
-                "rating": 5,
-                "date": "August 14, 2023",
-                "review": "I'm blown away by the quality and style of the clothes I received from Shop.co. From casual wear to elegant dresses, every piece I've bought has exceeded my expectations."
-            },
-            {
-                "id": 2,
-                "name": "Alex K.",
-                "rating": 5,
-                "date": "August 12, 2023",
-                "review": "Finding clothes that align with my personal style used to be a challenge until I discovered Shop.co. The range of options they offer is truly remarkable, catering to a variety of tastes and occasions."
-            },
-            {
-                "id": 3,
-                "name": "James L.",
-                "rating": 4,
-                "date": "August 10, 2023",
-                "review": "As someone who's always on the lookout for unique fashion pieces, I'm thrilled to have stumbled upon Shop.co. The selection of clothes is not only diverse but also on-point with the latest trends."
-            },
-            {
-                "id": 4,
-                "name": "Samantha D.",
-                "rating": 5,
-                "date": "August 8, 2023",
-                "review": "I absolutely love this t-shirt! The fabric is incredibly soft and the fit is perfect. I've received so many compliments when wearing it. Definitely ordering more colors!"
-            }
-        ],
-        "faqs": [
-            {
-                "question": "What is the return policy?",
-                "answer": "We offer a 30-day return policy for all unworn items with tags attached."
-            },
-            {
-                "question": "What is the return policy?",
-                "answer": "We offer a 30-day return policy for all unworn items with tags attached."
-            },
-            {
-                "question": "What is the return policy?",
-                "answer": "We offer a 30-day return policy for all unworn items with tags attached."
-            }
-        ],
-        "date": "Tue Jun 10 2025"
-    },
-    {
-        "name": "MB3 Mens 901",
-        "price": 232,
-        "offer_price": 208,
-        "stars": 4.2,
-        "type": "T-shirt",
-        "dress_style": "Gym",
-        "colors": [
-            "Black"
-        ],
-        "quantity": 5,
-        "sizes": [
-            "S",
-            "M"
-        ],
-        "description": "MB3 Mens 901 Base Layer Top (pack of 1)",
-        "images": {
-            "Black": [
-                "https://m.media-amazon.com/images/I/41SU+6IsrnL._AC_SX522_.jpg",
-                "https://m.media-amazon.com/images/I/31pFBOun-bL._AC_SX679_.jpg",
-                "https://m.media-amazon.com/images/I/31aXgGRb+1L._AC_SY500_.jpg"
-            ]
-        },
-        "reviews": [],
-        "faqs": [],
+        "name": "Sarah M.",
+        "rating": 5,
+        "date": "2023-08-14",
+        "review": "I'm blown away by the quality and style of the clothes I received from Shop.co. From casual wear to elegant dresses, every piece I've bought has exceeded my expectations."
+      },
+      {
         "id": 2,
-        "date": "Tue Jun 10 2025"
-    },
-    {
-        "name": "Dry Men's T-shirt",
-        "price": 500,
-        "offer_price": 450,
-        "stars": 0,
-        "type": "T-shirt",
-        "dress_style": "Gym",
-        "colors": [
-            "Blue",
-            "Red"
-        ],
-        "quantity": 9,
-        "sizes": [],
-        "description": "Dry Men's Running Breathable T-shirt - Prussian Blue",
-        "images": {
-            "Blue": [
-                "https://contents.mediadecathlon.com/p2616056/1cr1/k$0111f9caa5e70aeaf1feeeddbd7f04d2/dry-men-s-running-breathable-t-shirt-neon-coral-pink.jpg?format=auto&f=768x0"
-            ],
-            "Red": [
-                "https://contents.mediadecathlon.com/p2397142/1cr1/k$6d7699bc658b6cb5c0c6912c3ed1d9e1/dry-men-s-running-breathable-t-shirt-neon-coral-pink.jpg?format=auto&f=768x0"
-            ]
-        },
-        "reviews": [
-            {
-                "id": 1,
-                "name": "Sarah M.",
-                "rating": 5,
-                "date": "August 14, 2023",
-                "review": "I'm blown away by the quality and style of the clothes I received from Shop.co. From casual wear to elegant dresses, every piece I've bought has exceeded my expectations."
-            },
-            {
-                "id": 2,
-                "name": "Alex K.",
-                "rating": 5,
-                "date": "August 12, 2023",
-                "review": "Finding clothes that align with my personal style used to be a challenge until I discovered Shop.co. The range of options they offer is truly remarkable, catering to a variety of tastes and occasions."
-            },
-            {
-                "id": 3,
-                "name": "James L.",
-                "rating": 4,
-                "date": "August 10, 2023",
-                "review": "As someone who's always on the lookout for unique fashion pieces, I'm thrilled to have stumbled upon Shop.co. The selection of clothes is not only diverse but also on-point with the latest trends."
-            },
-            {
-                "id": 4,
-                "name": "Samantha D.",
-                "rating": 5,
-                "date": "August 8, 2023",
-                "review": "I absolutely love this t-shirt! The fabric is incredibly soft and the fit is perfect. I've received so many compliments when wearing it. Definitely ordering more colors!"
-            }
-        ],
-        "faqs": [],
+        "name": "Alex K.",
+        "rating": 5,
+        "date": "2023-08-12",
+        "review": "Finding clothes that align with my personal style used to be a challenge until I discovered Shop.co. The range of options they offer is truly remarkable, catering to a variety of tastes and occasions."
+      },
+      {
         "id": 3,
-        "date": "wed Jun 11 2025"
-    },
-    {
-        "name": "Men Suit ",
-        "price": 11990,
-        "offer_price": 11990,
-        "stars": 0,
-        "type": "T-shirt",
-        "dress_style": "Casual",
-        "colors": [
-            "Blue"
-        ],
-        "quantity": 2,
-        "sizes": [
-            "XL",
-            "XXL"
-        ],
-        "description": "Checks Chanee Suit - MSU374",
-        "images": {
-            "Blue": [
-                "https://nagahomme.com/cdn/shop/files/MSU374-007_4.png?v=1745837089"
-            ]
-        },
-        "reviews": [],
-        "faqs": [],
+        "name": "James L.",
+        "rating": 4,
+        "date": "2023-08-10",
+        "review": "As someone who's always on the lookout for unique fashion pieces, I'm thrilled to have stumbled upon Shop.co. The selection of clothes is not only diverse but also on-point with the latest trends."
+      },
+      {
         "id": 4,
-        "date": "wed Jun 11 2025"
+        "name": "Samantha D.",
+        "rating": 5,
+        "date": "2023-08-08",
+        "review": "I absolutely love this t-shirt! The fabric is incredibly soft and the fit is perfect. I've received so many compliments when wearing it. Definitely ordering more colors!"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What is the return policy?",
+        "answer": "We offer a 30-day return policy for all unworn items with tags attached."
+      },
+      {
+        "question": "How do I choose the right size?",
+        "answer": "Please refer to our size chart or contact customer service for sizing assistance."
+      },
+      {
+        "question": "Is this item machine washable?",
+        "answer": "Yes, this polo shirt is machine washable. Please follow the care instructions on the label."
+      }
+    ],
+    "date": "2025-06-10"
+  },
+  {
+    "id": 2,
+    "name": "MB3 Mens 901 Base Layer Top",
+    "price": 232.00,
+    "offer_price": 208.00,
+    "stars": 4.2,
+    "type": "T-shirt",
+    "dress_style": "Casual",
+    "colors": ["Black"],
+    "quantity": 5,
+    "sizes": ["S", "M"],
+    "description": "MB3 Mens 901 Base Layer Top (pack of 1) - High-performance athletic wear for optimal comfort during workouts.",
+    "images": {
+      "Black": [
+        "https://m.media-amazon.com/images/I/41SU+6IsrnL._AC_SX522_.jpg",
+        "https://m.media-amazon.com/images/I/31pFBOun-bL._AC_SX679_.jpg",
+        "https://m.media-amazon.com/images/I/31aXgGRb+1L._AC_SY500_.jpg"
+      ]
     },
-    {
-        "name": "Graphic Hoodie",
-        "price": 2700,
-        "offer_price": 1080,
-        "stars": 0,
-        "type": "Hoodie",
-        "dress_style": "Casual",
-        "colors": [
-            "red"
-        ],
-        "quantity": 2,
-        "sizes": [
-            "S",
-            "M",
-            "XL"
-        ],
-        "description": "AE Super Soft Graphic Hoodie",
-        "images": {
-            "red": [
-                "https://media.alshaya.com/adobe/assets/urn:aaid:aem:37118b2b-6780-4ad3-b58f-b180ff21e7c2/as/AR-0193-2194-647_5.jpg?height=630",
-                "https://media.alshaya.com/adobe/assets/urn:aaid:aem:6bb313df-7d62-4217-9da6-cb960c7877a6/as/AR-0193-2194-647_6.jpg?height=630"
-            ]
-        },
-        "reviews": [],
-        "faqs": [],
-        "id": 5,
-        "date": "Tue Jun 10 2025"
+    "reviews": [
+      {
+        "id": 1,
+        "name": "Mike R.",
+        "rating": 4,
+        "date": "2023-09-15",
+        "review": "Great base layer for workouts. Keeps me dry and comfortable during intense training sessions."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What material is this made from?",
+        "answer": "This base layer is made from moisture-wicking synthetic fabric blend designed for athletic performance."
+      }
+    ],
+    "date": "2025-06-10"
+  },
+  {
+    "id": 3,
+    "name": "Dry Men's Running T-shirt",
+    "price": 500.00,
+    "offer_price": 450.00,
+    "stars": 4.5,
+    "type": "T-shirt",
+    "dress_style": "Gym",
+    "colors": ["Blue", "Red"],
+    "quantity": 9,
+    "sizes": ["S", "M", "L", "XL"],
+    "description": "Dry Men's Running Breathable T-shirt - High-performance athletic wear with moisture-wicking technology.",
+    "images": {
+      "Blue": [
+        "https://contents.mediadecathlon.com/p2616056/1cr1/k$0111f9caa5e70aeaf1feeeddbd7f04d2/dry-men-s-running-breathable-t-shirt-neon-coral-pink.jpg?format=auto&f=768x0"
+      ],
+      "Red": [
+        "https://contents.mediadecathlon.com/p2397142/1cr1/k$6d7699bc658b6cb5c0c6912c3ed1d9e1/dry-men-s-running-breathable-t-shirt-neon-coral-pink.jpg?format=auto&f=768x0"
+      ]
     },
-    {
-        "name": "hh",
-        "price": 2,
-        "offer_price": 0,
-        "stars": 0,
-        "type": "T-shirt",
-        "dress_style": "Casual",
-        "colors": [
-            "2"
-        ],
-        "quantity": 2,
-        "sizes": [],
-        "description": "",
-        "images": {
-            "2": []
-        },
-        "reviews": [],
-        "faq": [],
-        "id": 6,
-        "date": "Wed Jun 11 2025"
+    "reviews": [
+      {
+        "id": 1,
+        "name": "David K.",
+        "rating": 5,
+        "date": "2023-08-20",
+        "review": "Perfect for running! The fabric is incredibly breathable and doesn't stick to your skin even during long runs."
+      },
+      {
+        "id": 2,
+        "name": "Tom S.",
+        "rating": 4,
+        "date": "2023-08-18",
+        "review": "Good quality athletic shirt. The fit is true to size and the material feels premium."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Is this shirt suitable for long-distance running?",
+        "answer": "Yes, this shirt is specifically designed for running with moisture-wicking technology to keep you comfortable during long runs."
+      }
+    ],
+    "date": "2025-06-11"
+  },
+  {
+    "id": 4,
+    "name": "Men's Checked Suit",
+    "price": 11990.00,
+    "offer_price": 10791.00,
+    "stars": 4.0,
+    "type": "Suit",
+    "dress_style": "Formal",
+    "colors": ["Blue"],
+    "quantity": 2,
+    "sizes": ["XL", "XXL"],
+    "description": "Elegant checked suit perfect for formal occasions and business meetings. Premium fabric with modern tailoring.",
+    "images": {
+      "Blue": [
+        "https://nagahomme.com/cdn/shop/files/MSU374-007_4.png?v=1745837089"
+      ]
     },
-    {
-        "name": "2",
-        "price": 2,
-        "offer_price": 0,
-        "stars": 0,
-        "type": "T-shirt",
-        "dress_style": "Casual",
-        "colors": [
-            "2"
-        ],
-        "quantity": 2,
-        "sizes": [],
-        "description": "",
-        "images": {
-            "2": []
-        },
-        "reviews": [],
-        "faq": [],
-        "id": 7,
-        "date": "Wed Jun 11 2025"
+    "reviews": [
+      {
+        "id": 1,
+        "name": "Robert M.",
+        "rating": 4,
+        "date": "2023-09-01",
+        "review": "Well-tailored suit with excellent fabric quality. Perfect for business meetings and formal events."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Does this suit require dry cleaning?",
+        "answer": "Yes, we recommend professional dry cleaning to maintain the suit's quality and appearance."
+      },
+      {
+        "question": "Is alterations service available?",
+        "answer": "Please contact our customer service for information about alteration services in your area."
+      }
+    ],
+    "date": "2025-06-11"
+  },
+  {
+    "id": 5,
+    "name": "AE Super Soft Graphic Hoodie",
+    "price": 2700.00,
+    "offer_price": 1080.00,
+    "stars": 4.3,
+    "type": "Hoodie",
+    "dress_style": "Casual",
+    "colors": ["Red"],
+    "quantity": 2,
+    "sizes": ["S", "M", "XL"],
+    "description": "AE Super Soft Graphic Hoodie - Comfortable and stylish hoodie perfect for casual wear and lounging.",
+    "images": {
+      "Red": [
+        "https://media.alshaya.com/adobe/assets/urn:aaid:aem:37118b2b-6780-4ad3-b58f-b180ff21e7c2/as/AR-0193-2194-647_5.jpg?height=630",
+        "https://media.alshaya.com/adobe/assets/urn:aaid:aem:6bb313df-7d62-4217-9da6-cb960c7877a6/as/AR-0193-2194-647_6.jpg?height=630"
+      ]
     },
-    {
-        "name": "2",
-        "price": 1.99,
-        "offer_price": 0,
-        "stars": 0,
-        "type": "T-shirt",
-        "dress_style": "Casual",
-        "colors": [
-            "2"
-        ],
-        "quantity": 2,
-        "sizes": [],
-        "description": "",
-        "images": {
-            "2": []
-        },
-        "reviews": [],
-        "faq": [],
-        "id": 8,
-        "date": "Wed Jun 11 2025"
-    }
+    "reviews": [
+      {
+        "id": 1,
+        "name": "Jessica L.",
+        "rating": 5,
+        "date": "2023-09-10",
+        "review": "This hoodie is incredibly soft and comfortable. The graphic design is trendy and the quality exceeded my expectations."
+      },
+      {
+        "id": 2,
+        "name": "Chris P.",
+        "rating": 4,
+        "date": "2023-09-08",
+        "review": "Great hoodie for the price. Very comfortable and warm. Perfect for casual outings."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What is the hoodie made of?",
+        "answer": "This hoodie is made from a super soft cotton blend fabric for maximum comfort."
+      },
+      {
+        "question": "How should I wash this hoodie?",
+        "answer": "Machine wash cold with similar colors. Tumble dry low to maintain softness and prevent shrinking."
+      }
+    ],
+    "date": "2025-06-10"
+  }
 ]

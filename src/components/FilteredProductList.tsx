@@ -50,14 +50,24 @@ const FilteredProductList = ({ filter_type }: FilteredProductListProps) => {
     let result = [...items];
 
     if (filter_type === 'newest') {
+      const today = new Date();
       const sevenDaysAgo = new Date();
-      sevenDaysAgo.setDate(sevenDaysAgo.getDate() - 7);
+      sevenDaysAgo.setDate(today.getDate() - 7);
 
-      result = result.filter(item => {
-        const itemDate = new Date(item.date);
-        return item.quantity > 0 && itemDate >= sevenDaysAgo;
-      });
+      result = result
+        .filter(item => {
+          if (!item.date || typeof item.date !== 'string') return false;
+
+          const itemDate = new Date(item.date);
+          if (isNaN(itemDate as any)) return false;
+
+          return item.quantity > 0 && itemDate >= sevenDaysAgo;
+        })
+        .sort((a, b) => new Date(b.date) > new Date(a.date) ? 1 : -1);
     }
+
+
+
     if (filter_type === 'top_selling') {
       result = result
         .filter(item => item.quantity < 10 && item.quantity > 0)
