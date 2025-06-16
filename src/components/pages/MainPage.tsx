@@ -15,9 +15,9 @@ const MainPage = () => {
           BROWSE BY DRESS STYLE
         </h2>
 
-        <div onClick={() => window.location.href =`/shop/Casual`} className="flex w-full gap-5 flex-col md:flex-row md:flex-wrap ">
+        <div className="flex w-full gap-5 flex-col md:flex-row md:flex-wrap ">
           <div className="mb-5 flex flex-col md:flex-row gap-5 w-full ">
-            <div
+            <div onClick={() => window.location.href = `/shop/Casual`}
               className={"relative h-64 rounded-xl overflow-hidden cursor-pointer w-full flex justify-around bg-white hover:scale-103 transition-transform duration-300"}
             >
               <img
@@ -34,7 +34,7 @@ const MainPage = () => {
             </div>
 
             <div
-              className={"relative h-64 rounded-xl overflow-hidden cursor-pointer md:w-3/2 flex justify-around bg-white hover:scale-103 transition-transform duration-300"}
+              onClick={() => window.location.href = `/shop/Formal`} className={"relative h-64 rounded-xl overflow-hidden cursor-pointer md:w-3/2 flex justify-around bg-white hover:scale-103 transition-transform duration-300"}
             >
               <img
                 src='https://nagahomme.com/cdn/shop/files/MSU374-007_4.png?v=1745837089'
@@ -53,7 +53,7 @@ const MainPage = () => {
           <div className="mb-5 flex flex-col md:flex-row gap-5 w-full ">
 
             <div
-              className={"relative h-64 rounded-xl overflow-hidden cursor-pointer w-full flex justify-around bg-white hover:scale-103 transition-transform duration-300"}
+              onClick={() => window.location.href = `/shop/Party`} className={"relative h-64 rounded-xl overflow-hidden cursor-pointer w-full flex justify-around bg-white hover:scale-103 transition-transform duration-300"}
             >
               <img
                 src="https://media.alshaya.com/adobe/assets/urn:aaid:aem:37118b2b-6780-4ad3-b58f-b180ff21e7c2/as/AR-0193-2194-647_5.jpg?height=630"
@@ -69,7 +69,7 @@ const MainPage = () => {
             </div>
 
             <div
-              className={"relative h-64 rounded-xl overflow-hidden cursor-pointer md:w-3/4 flex justify-around bg-white hover:scale-103 transition-transform duration-300"}
+              onClick={() => window.location.href = `/shop/Gym`} className={"relative h-64 rounded-xl overflow-hidden cursor-pointer md:w-3/4 flex justify-around bg-white hover:scale-103 transition-transform duration-300"}
             >
               <img
                 src="https://m.media-amazon.com/images/I/41SU+6IsrnL._AC_SX522_.jpg"

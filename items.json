@@ -232,5 +232,1638 @@
       }
     ],
     "date": "2025-06-10"
+  },
+  {
+    "id": 5,
+    "name": "AE Super Soft Graphic Hoodie",
+    "price": 2700.00,
+    "offer_price": 1080.00,
+    "stars": 4.3,
+    "type": "Hoodie",
+    "dress_style": "Party",
+    "colors": ["Red"],
+    "quantity": 2,
+    "sizes": ["S", "M", "XL"],
+    "description": "AE Super Soft Graphic Hoodie - Comfortable and stylish hoodie perfect for casual wear and lounging.",
+    "images": {
+      "Red": [
+        "https://media.alshaya.com/adobe/assets/urn:aaid:aem:37118b2b-6780-4ad3-b58f-b180ff21e7c2/as/AR-0193-2194-647_5.jpg?height=630",
+        "https://media.alshaya.com/adobe/assets/urn:aaid:aem:6bb313df-7d62-4217-9da6-cb960c7877a6/as/AR-0193-2194-647_6.jpg?height=630"
+      ]
+    },
+    "reviews": [
+      {
+        "id": 1,
+        "name": "Jessica L.",
+        "rating": 5,
+        "date": "2023-09-10",
+        "review": "This hoodie is incredibly soft and comfortable. The graphic design is trendy and the quality exceeded my expectations."
+      },
+      {
+        "id": 2,
+        "name": "Chris P.",
+        "rating": 4,
+        "date": "2023-09-08",
+        "review": "Great hoodie for the price. Very comfortable and warm. Perfect for casual outings."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What is the hoodie made of?",
+        "answer": "This hoodie is made from a super soft cotton blend fabric for maximum comfort."
+      },
+      {
+        "question": "How should I wash this hoodie?",
+        "answer": "Machine wash cold with similar colors. Tumble dry low to maintain softness and prevent shrinking."
+      }
+    ],
+    "date": "2025-06-10"
+  },{
+    "id": 1,
+    "name": "Polo T-shirt",
+    "price": 49.99,
+    "offer_price": 44.99,
+    "stars": 4.2,
+    "type": "T-shirt",
+    "dress_style": "Casual",
+    "colors": ["Blue", "Red"],
+    "quantity": 30,
+    "sizes": ["32", "34", "36", "38"],
+    "description": "Turquoise Cotton Lycra Polo Shirt.",
+    "images": {
+      "Red": [
+        "https://www.britishhouse.shop/cdn/shop/products/00_505b9ab3-f951-4635-a507-12d2f4c0a817_1800x1800.jpg?v=1658950890",
+        "https://www.britishhouse.shop/cdn/shop/products/014-POCL019_3_1800x1800.png?v=1679511188",
+        "https://www.britishhouse.shop/cdn/shop/files/020-POTO070_1_94cf973c-65f3-4ebf-b525-89e584c0e3a2_1800x1800.jpg?v=1748429179"
+      ],
+      "Blue": [
+        "https://www.britishhouse.shop/cdn/shop/products/new-polo-lycra-5_1800x1800.jpg?v=1658950662",
+        "https://www.britishhouse.shop/products/014-POCL018_1800x1800.png?v=1679511621",
+        "https://www.britishhouse.shop/cdn/shop/products/014-POCL018_1_1800x1800.png?v=1679511621"
+      ]
+    },
+    "reviews": [
+      {
+        "id": 1,
+        "name": "Sarah M.",
+        "rating": 5,
+        "date": "2023-08-14",
+        "review": "I'm blown away by the quality and style of the clothes I received from Shop.co. From casual wear to elegant dresses, every piece I've bought has exceeded my expectations."
+      },
+      {
+        "id": 2,
+        "name": "Alex K.",
+        "rating": 5,
+        "date": "2023-08-12",
+        "review": "Finding clothes that align with my personal style used to be a challenge until I discovered Shop.co. The range of options they offer is truly remarkable, catering to a variety of tastes and occasions."
+      },
+      {
+        "id": 3,
+        "name": "James L.",
+        "rating": 4,
+        "date": "2023-08-10",
+        "review": "As someone who's always on the lookout for unique fashion pieces, I'm thrilled to have stumbled upon Shop.co. The selection of clothes is not only diverse but also on-point with the latest trends."
+      },
+      {
+        "id": 4,
+        "name": "Samantha D.",
+        "rating": 5,
+        "date": "2023-08-08",
+        "review": "I absolutely love this t-shirt! The fabric is incredibly soft and the fit is perfect. I've received so many compliments when wearing it. Definitely ordering more colors!"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What is the return policy?",
+        "answer": "We offer a 30-day return policy for all unworn items with tags attached."
+      },
+      {
+        "question": "How do I choose the right size?",
+        "answer": "Please refer to our size chart or contact customer service for sizing assistance."
+      },
+      {
+        "question": "Is this item machine washable?",
+        "answer": "Yes, this polo shirt is machine washable. Please follow the care instructions on the label."
+      }
+    ],
+    "date": "2025-06-10"
+  },{
+    "id": 1,
+    "name": "Polo T-shirt",
+    "price": 49.99,
+    "offer_price": 44.99,
+    "stars": 4.2,
+    "type": "T-shirt",
+    "dress_style": "Casual",
+    "colors": ["Blue", "Red"],
+    "quantity": 30,
+    "sizes": ["32", "34", "36", "38"],
+    "description": "Turquoise Cotton Lycra Polo Shirt.",
+    "images": {
+      "Red": [
+        "https://www.britishhouse.shop/cdn/shop/products/00_505b9ab3-f951-4635-a507-12d2f4c0a817_1800x1800.jpg?v=1658950890",
+        "https://www.britishhouse.shop/cdn/shop/products/014-POCL019_3_1800x1800.png?v=1679511188",
+        "https://www.britishhouse.shop/cdn/shop/files/020-POTO070_1_94cf973c-65f3-4ebf-b525-89e584c0e3a2_1800x1800.jpg?v=1748429179"
+      ],
+      "Blue": [
+        "https://www.britishhouse.shop/cdn/shop/products/new-polo-lycra-5_1800x1800.jpg?v=1658950662",
+        "https://www.britishhouse.shop/products/014-POCL018_1800x1800.png?v=1679511621",
+        "https://www.britishhouse.shop/cdn/shop/products/014-POCL018_1_1800x1800.png?v=1679511621"
+      ]
+    },
+    "reviews": [
+      {
+        "id": 1,
+        "name": "Sarah M.",
+        "rating": 5,
+        "date": "2023-08-14",
+        "review": "I'm blown away by the quality and style of the clothes I received from Shop.co. From casual wear to elegant dresses, every piece I've bought has exceeded my expectations."
+      },
+      {
+        "id": 2,
+        "name": "Alex K.",
+        "rating": 5,
+        "date": "2023-08-12",
+        "review": "Finding clothes that align with my personal style used to be a challenge until I discovered Shop.co. The range of options they offer is truly remarkable, catering to a variety of tastes and occasions."
+      },
+      {
+        "id": 3,
+        "name": "James L.",
+        "rating": 4,
+        "date": "2023-08-10",
+        "review": "As someone who's always on the lookout for unique fashion pieces, I'm thrilled to have stumbled upon Shop.co. The selection of clothes is not only diverse but also on-point with the latest trends."
+      },
+      {
+        "id": 4,
+        "name": "Samantha D.",
+        "rating": 5,
+        "date": "2023-08-08",
+        "review": "I absolutely love this t-shirt! The fabric is incredibly soft and the fit is perfect. I've received so many compliments when wearing it. Definitely ordering more colors!"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What is the return policy?",
+        "answer": "We offer a 30-day return policy for all unworn items with tags attached."
+      },
+      {
+        "question": "How do I choose the right size?",
+        "answer": "Please refer to our size chart or contact customer service for sizing assistance."
+      },
+      {
+        "question": "Is this item machine washable?",
+        "answer": "Yes, this polo shirt is machine washable. Please follow the care instructions on the label."
+      }
+    ],
+    "date": "2025-06-10"
+  },{
+    "id": 1,
+    "name": "Polo T-shirt",
+    "price": 49.99,
+    "offer_price": 44.99,
+    "stars": 4.2,
+    "type": "T-shirt",
+    "dress_style": "Casual",
+    "colors": ["Blue", "Red"],
+    "quantity": 30,
+    "sizes": ["32", "34", "36", "38"],
+    "description": "Turquoise Cotton Lycra Polo Shirt.",
+    "images": {
+      "Red": [
+        "https://www.britishhouse.shop/cdn/shop/products/00_505b9ab3-f951-4635-a507-12d2f4c0a817_1800x1800.jpg?v=1658950890",
+        "https://www.britishhouse.shop/cdn/shop/products/014-POCL019_3_1800x1800.png?v=1679511188",
+        "https://www.britishhouse.shop/cdn/shop/files/020-POTO070_1_94cf973c-65f3-4ebf-b525-89e584c0e3a2_1800x1800.jpg?v=1748429179"
+      ],
+      "Blue": [
+        "https://www.britishhouse.shop/cdn/shop/products/new-polo-lycra-5_1800x1800.jpg?v=1658950662",
+        "https://www.britishhouse.shop/products/014-POCL018_1800x1800.png?v=1679511621",
+        "https://www.britishhouse.shop/cdn/shop/products/014-POCL018_1_1800x1800.png?v=1679511621"
+      ]
+    },
+    "reviews": [
+      {
+        "id": 1,
+        "name": "Sarah M.",
+        "rating": 5,
+        "date": "2023-08-14",
+        "review": "I'm blown away by the quality and style of the clothes I received from Shop.co. From casual wear to elegant dresses, every piece I've bought has exceeded my expectations."
+      },
+      {
+        "id": 2,
+        "name": "Alex K.",
+        "rating": 5,
+        "date": "2023-08-12",
+        "review": "Finding clothes that align with my personal style used to be a challenge until I discovered Shop.co. The range of options they offer is truly remarkable, catering to a variety of tastes and occasions."
+      },
+      {
+        "id": 3,
+        "name": "James L.",
+        "rating": 4,
+        "date": "2023-08-10",
+        "review": "As someone who's always on the lookout for unique fashion pieces, I'm thrilled to have stumbled upon Shop.co. The selection of clothes is not only diverse but also on-point with the latest trends."
+      },
+      {
+        "id": 4,
+        "name": "Samantha D.",
+        "rating": 5,
+        "date": "2023-08-08",
+        "review": "I absolutely love this t-shirt! The fabric is incredibly soft and the fit is perfect. I've received so many compliments when wearing it. Definitely ordering more colors!"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What is the return policy?",
+        "answer": "We offer a 30-day return policy for all unworn items with tags attached."
+      },
+      {
+        "question": "How do I choose the right size?",
+        "answer": "Please refer to our size chart or contact customer service for sizing assistance."
+      },
+      {
+        "question": "Is this item machine washable?",
+        "answer": "Yes, this polo shirt is machine washable. Please follow the care instructions on the label."
+      }
+    ],
+    "date": "2025-06-10"
+  },{
+    "id": 1,
+    "name": "Polo T-shirt",
+    "price": 49.99,
+    "offer_price": 44.99,
+    "stars": 4.2,
+    "type": "T-shirt",
+    "dress_style": "Casual",
+    "colors": ["Blue", "Red"],
+    "quantity": 30,
+    "sizes": ["32", "34", "36", "38"],
+    "description": "Turquoise Cotton Lycra Polo Shirt.",
+    "images": {
+      "Red": [
+        "https://www.britishhouse.shop/cdn/shop/products/00_505b9ab3-f951-4635-a507-12d2f4c0a817_1800x1800.jpg?v=1658950890",
+        "https://www.britishhouse.shop/cdn/shop/products/014-POCL019_3_1800x1800.png?v=1679511188",
+        "https://www.britishhouse.shop/cdn/shop/files/020-POTO070_1_94cf973c-65f3-4ebf-b525-89e584c0e3a2_1800x1800.jpg?v=1748429179"
+      ],
+      "Blue": [
+        "https://www.britishhouse.shop/cdn/shop/products/new-polo-lycra-5_1800x1800.jpg?v=1658950662",
+        "https://www.britishhouse.shop/products/014-POCL018_1800x1800.png?v=1679511621",
+        "https://www.britishhouse.shop/cdn/shop/products/014-POCL018_1_1800x1800.png?v=1679511621"
+      ]
+    },
+    "reviews": [
+      {
+        "id": 1,
+        "name": "Sarah M.",
+        "rating": 5,
+        "date": "2023-08-14",
+        "review": "I'm blown away by the quality and style of the clothes I received from Shop.co. From casual wear to elegant dresses, every piece I've bought has exceeded my expectations."
+      },
+      {
+        "id": 2,
+        "name": "Alex K.",
+        "rating": 5,
+        "date": "2023-08-12",
+        "review": "Finding clothes that align with my personal style used to be a challenge until I discovered Shop.co. The range of options they offer is truly remarkable, catering to a variety of tastes and occasions."
+      },
+      {
+        "id": 3,
+        "name": "James L.",
+        "rating": 4,
+        "date": "2023-08-10",
+        "review": "As someone who's always on the lookout for unique fashion pieces, I'm thrilled to have stumbled upon Shop.co. The selection of clothes is not only diverse but also on-point with the latest trends."
+      },
+      {
+        "id": 4,
+        "name": "Samantha D.",
+        "rating": 5,
+        "date": "2023-08-08",
+        "review": "I absolutely love this t-shirt! The fabric is incredibly soft and the fit is perfect. I've received so many compliments when wearing it. Definitely ordering more colors!"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What is the return policy?",
+        "answer": "We offer a 30-day return policy for all unworn items with tags attached."
+      },
+      {
+        "question": "How do I choose the right size?",
+        "answer": "Please refer to our size chart or contact customer service for sizing assistance."
+      },
+      {
+        "question": "Is this item machine washable?",
+        "answer": "Yes, this polo shirt is machine washable. Please follow the care instructions on the label."
+      }
+    ],
+    "date": "2025-06-10"
+  },{
+    "id": 1,
+    "name": "Polo T-shirt",
+    "price": 49.99,
+    "offer_price": 44.99,
+    "stars": 4.2,
+    "type": "T-shirt",
+    "dress_style": "Casual",
+    "colors": ["Blue", "Red"],
+    "quantity": 30,
+    "sizes": ["32", "34", "36", "38"],
+    "description": "Turquoise Cotton Lycra Polo Shirt.",
+    "images": {
+      "Red": [
+        "https://www.britishhouse.shop/cdn/shop/products/00_505b9ab3-f951-4635-a507-12d2f4c0a817_1800x1800.jpg?v=1658950890",
+        "https://www.britishhouse.shop/cdn/shop/products/014-POCL019_3_1800x1800.png?v=1679511188",
+        "https://www.britishhouse.shop/cdn/shop/files/020-POTO070_1_94cf973c-65f3-4ebf-b525-89e584c0e3a2_1800x1800.jpg?v=1748429179"
+      ],
+      "Blue": [
+        "https://www.britishhouse.shop/cdn/shop/products/new-polo-lycra-5_1800x1800.jpg?v=1658950662",
+        "https://www.britishhouse.shop/products/014-POCL018_1800x1800.png?v=1679511621",
+        "https://www.britishhouse.shop/cdn/shop/products/014-POCL018_1_1800x1800.png?v=1679511621"
+      ]
+    },
+    "reviews": [
+      {
+        "id": 1,
+        "name": "Sarah M.",
+        "rating": 5,
+        "date": "2023-08-14",
+        "review": "I'm blown away by the quality and style of the clothes I received from Shop.co. From casual wear to elegant dresses, every piece I've bought has exceeded my expectations."
+      },
+      {
+        "id": 2,
+        "name": "Alex K.",
+        "rating": 5,
+        "date": "2023-08-12",
+        "review": "Finding clothes that align with my personal style used to be a challenge until I discovered Shop.co. The range of options they offer is truly remarkable, catering to a variety of tastes and occasions."
+      },
+      {
+        "id": 3,
+        "name": "James L.",
+        "rating": 4,
+        "date": "2023-08-10",
+        "review": "As someone who's always on the lookout for unique fashion pieces, I'm thrilled to have stumbled upon Shop.co. The selection of clothes is not only diverse but also on-point with the latest trends."
+      },
+      {
+        "id": 4,
+        "name": "Samantha D.",
+        "rating": 5,
+        "date": "2023-08-08",
+        "review": "I absolutely love this t-shirt! The fabric is incredibly soft and the fit is perfect. I've received so many compliments when wearing it. Definitely ordering more colors!"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What is the return policy?",
+        "answer": "We offer a 30-day return policy for all unworn items with tags attached."
+      },
+      {
+        "question": "How do I choose the right size?",
+        "answer": "Please refer to our size chart or contact customer service for sizing assistance."
+      },
+      {
+        "question": "Is this item machine washable?",
+        "answer": "Yes, this polo shirt is machine washable. Please follow the care instructions on the label."
+      }
+    ],
+    "date": "2025-06-10"
+  },{
+    "id": 1,
+    "name": "Polo T-shirt",
+    "price": 49.99,
+    "offer_price": 44.99,
+    "stars": 4.2,
+    "type": "T-shirt",
+    "dress_style": "Casual",
+    "colors": ["Blue", "Red"],
+    "quantity": 30,
+    "sizes": ["32", "34", "36", "38"],
+    "description": "Turquoise Cotton Lycra Polo Shirt.",
+    "images": {
+      "Red": [
+        "https://www.britishhouse.shop/cdn/shop/products/00_505b9ab3-f951-4635-a507-12d2f4c0a817_1800x1800.jpg?v=1658950890",
+        "https://www.britishhouse.shop/cdn/shop/products/014-POCL019_3_1800x1800.png?v=1679511188",
+        "https://www.britishhouse.shop/cdn/shop/files/020-POTO070_1_94cf973c-65f3-4ebf-b525-89e584c0e3a2_1800x1800.jpg?v=1748429179"
+      ],
+      "Blue": [
+        "https://www.britishhouse.shop/cdn/shop/products/new-polo-lycra-5_1800x1800.jpg?v=1658950662",
+        "https://www.britishhouse.shop/products/014-POCL018_1800x1800.png?v=1679511621",
+        "https://www.britishhouse.shop/cdn/shop/products/014-POCL018_1_1800x1800.png?v=1679511621"
+      ]
+    },
+    "reviews": [
+      {
+        "id": 1,
+        "name": "Sarah M.",
+        "rating": 5,
+        "date": "2023-08-14",
+        "review": "I'm blown away by the quality and style of the clothes I received from Shop.co. From casual wear to elegant dresses, every piece I've bought has exceeded my expectations."
+      },
+      {
+        "id": 2,
+        "name": "Alex K.",
+        "rating": 5,
+        "date": "2023-08-12",
+        "review": "Finding clothes that align with my personal style used to be a challenge until I discovered Shop.co. The range of options they offer is truly remarkable, catering to a variety of tastes and occasions."
+      },
+      {
+        "id": 3,
+        "name": "James L.",
+        "rating": 4,
+        "date": "2023-08-10",
+        "review": "As someone who's always on the lookout for unique fashion pieces, I'm thrilled to have stumbled upon Shop.co. The selection of clothes is not only diverse but also on-point with the latest trends."
+      },
+      {
+        "id": 4,
+        "name": "Samantha D.",
+        "rating": 5,
+        "date": "2023-08-08",
+        "review": "I absolutely love this t-shirt! The fabric is incredibly soft and the fit is perfect. I've received so many compliments when wearing it. Definitely ordering more colors!"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What is the return policy?",
+        "answer": "We offer a 30-day return policy for all unworn items with tags attached."
+      },
+      {
+        "question": "How do I choose the right size?",
+        "answer": "Please refer to our size chart or contact customer service for sizing assistance."
+      },
+      {
+        "question": "Is this item machine washable?",
+        "answer": "Yes, this polo shirt is machine washable. Please follow the care instructions on the label."
+      }
+    ],
+    "date": "2025-06-10"
+  },{
+    "id": 1,
+    "name": "Polo T-shirt",
+    "price": 49.99,
+    "offer_price": 44.99,
+    "stars": 4.2,
+    "type": "T-shirt",
+    "dress_style": "Casual",
+    "colors": ["Blue", "Red"],
+    "quantity": 30,
+    "sizes": ["32", "34", "36", "38"],
+    "description": "Turquoise Cotton Lycra Polo Shirt.",
+    "images": {
+      "Red": [
+        "https://www.britishhouse.shop/cdn/shop/products/00_505b9ab3-f951-4635-a507-12d2f4c0a817_1800x1800.jpg?v=1658950890",
+        "https://www.britishhouse.shop/cdn/shop/products/014-POCL019_3_1800x1800.png?v=1679511188",
+        "https://www.britishhouse.shop/cdn/shop/files/020-POTO070_1_94cf973c-65f3-4ebf-b525-89e584c0e3a2_1800x1800.jpg?v=1748429179"
+      ],
+      "Blue": [
+        "https://www.britishhouse.shop/cdn/shop/products/new-polo-lycra-5_1800x1800.jpg?v=1658950662",
+        "https://www.britishhouse.shop/products/014-POCL018_1800x1800.png?v=1679511621",
+        "https://www.britishhouse.shop/cdn/shop/products/014-POCL018_1_1800x1800.png?v=1679511621"
+      ]
+    },
+    "reviews": [
+      {
+        "id": 1,
+        "name": "Sarah M.",
+        "rating": 5,
+        "date": "2023-08-14",
+        "review": "I'm blown away by the quality and style of the clothes I received from Shop.co. From casual wear to elegant dresses, every piece I've bought has exceeded my expectations."
+      },
+      {
+        "id": 2,
+        "name": "Alex K.",
+        "rating": 5,
+        "date": "2023-08-12",
+        "review": "Finding clothes that align with my personal style used to be a challenge until I discovered Shop.co. The range of options they offer is truly remarkable, catering to a variety of tastes and occasions."
+      },
+      {
+        "id": 3,
+        "name": "James L.",
+        "rating": 4,
+        "date": "2023-08-10",
+        "review": "As someone who's always on the lookout for unique fashion pieces, I'm thrilled to have stumbled upon Shop.co. The selection of clothes is not only diverse but also on-point with the latest trends."
+      },
+      {
+        "id": 4,
+        "name": "Samantha D.",
+        "rating": 5,
+        "date": "2023-08-08",
+        "review": "I absolutely love this t-shirt! The fabric is incredibly soft and the fit is perfect. I've received so many compliments when wearing it. Definitely ordering more colors!"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What is the return policy?",
+        "answer": "We offer a 30-day return policy for all unworn items with tags attached."
+      },
+      {
+        "question": "How do I choose the right size?",
+        "answer": "Please refer to our size chart or contact customer service for sizing assistance."
+      },
+      {
+        "question": "Is this item machine washable?",
+        "answer": "Yes, this polo shirt is machine washable. Please follow the care instructions on the label."
+      }
+    ],
+    "date": "2025-06-10"
+  },{
+    "id": 1,
+    "name": "Polo T-shirt",
+    "price": 49.99,
+    "offer_price": 44.99,
+    "stars": 4.2,
+    "type": "T-shirt",
+    "dress_style": "Casual",
+    "colors": ["Blue", "Red"],
+    "quantity": 30,
+    "sizes": ["32", "34", "36", "38"],
+    "description": "Turquoise Cotton Lycra Polo Shirt.",
+    "images": {
+      "Red": [
+        "https://www.britishhouse.shop/cdn/shop/products/00_505b9ab3-f951-4635-a507-12d2f4c0a817_1800x1800.jpg?v=1658950890",
+        "https://www.britishhouse.shop/cdn/shop/products/014-POCL019_3_1800x1800.png?v=1679511188",
+        "https://www.britishhouse.shop/cdn/shop/files/020-POTO070_1_94cf973c-65f3-4ebf-b525-89e584c0e3a2_1800x1800.jpg?v=1748429179"
+      ],
+      "Blue": [
+        "https://www.britishhouse.shop/cdn/shop/products/new-polo-lycra-5_1800x1800.jpg?v=1658950662",
+        "https://www.britishhouse.shop/products/014-POCL018_1800x1800.png?v=1679511621",
+        "https://www.britishhouse.shop/cdn/shop/products/014-POCL018_1_1800x1800.png?v=1679511621"
+      ]
+    },
+    "reviews": [
+      {
+        "id": 1,
+        "name": "Sarah M.",
+        "rating": 5,
+        "date": "2023-08-14",
+        "review": "I'm blown away by the quality and style of the clothes I received from Shop.co. From casual wear to elegant dresses, every piece I've bought has exceeded my expectations."
+      },
+      {
+        "id": 2,
+        "name": "Alex K.",
+        "rating": 5,
+        "date": "2023-08-12",
+        "review": "Finding clothes that align with my personal style used to be a challenge until I discovered Shop.co. The range of options they offer is truly remarkable, catering to a variety of tastes and occasions."
+      },
+      {
+        "id": 3,
+        "name": "James L.",
+        "rating": 4,
+        "date": "2023-08-10",
+        "review": "As someone who's always on the lookout for unique fashion pieces, I'm thrilled to have stumbled upon Shop.co. The selection of clothes is not only diverse but also on-point with the latest trends."
+      },
+      {
+        "id": 4,
+        "name": "Samantha D.",
+        "rating": 5,
+        "date": "2023-08-08",
+        "review": "I absolutely love this t-shirt! The fabric is incredibly soft and the fit is perfect. I've received so many compliments when wearing it. Definitely ordering more colors!"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What is the return policy?",
+        "answer": "We offer a 30-day return policy for all unworn items with tags attached."
+      },
+      {
+        "question": "How do I choose the right size?",
+        "answer": "Please refer to our size chart or contact customer service for sizing assistance."
+      },
+      {
+        "question": "Is this item machine washable?",
+        "answer": "Yes, this polo shirt is machine washable. Please follow the care instructions on the label."
+      }
+    ],
+    "date": "2025-06-10"
+  },{
+    "id": 1,
+    "name": "Polo T-shirt",
+    "price": 49.99,
+    "offer_price": 44.99,
+    "stars": 4.2,
+    "type": "T-shirt",
+    "dress_style": "Casual",
+    "colors": ["Blue", "Red"],
+    "quantity": 30,
+    "sizes": ["32", "34", "36", "38"],
+    "description": "Turquoise Cotton Lycra Polo Shirt.",
+    "images": {
+      "Red": [
+        "https://www.britishhouse.shop/cdn/shop/products/00_505b9ab3-f951-4635-a507-12d2f4c0a817_1800x1800.jpg?v=1658950890",
+        "https://www.britishhouse.shop/cdn/shop/products/014-POCL019_3_1800x1800.png?v=1679511188",
+        "https://www.britishhouse.shop/cdn/shop/files/020-POTO070_1_94cf973c-65f3-4ebf-b525-89e584c0e3a2_1800x1800.jpg?v=1748429179"
+      ],
+      "Blue": [
+        "https://www.britishhouse.shop/cdn/shop/products/new-polo-lycra-5_1800x1800.jpg?v=1658950662",
+        "https://www.britishhouse.shop/products/014-POCL018_1800x1800.png?v=1679511621",
+        "https://www.britishhouse.shop/cdn/shop/products/014-POCL018_1_1800x1800.png?v=1679511621"
+      ]
+    },
+    "reviews": [
+      {
+        "id": 1,
+        "name": "Sarah M.",
+        "rating": 5,
+        "date": "2023-08-14",
+        "review": "I'm blown away by the quality and style of the clothes I received from Shop.co. From casual wear to elegant dresses, every piece I've bought has exceeded my expectations."
+      },
+      {
+        "id": 2,
+        "name": "Alex K.",
+        "rating": 5,
+        "date": "2023-08-12",
+        "review": "Finding clothes that align with my personal style used to be a challenge until I discovered Shop.co. The range of options they offer is truly remarkable, catering to a variety of tastes and occasions."
+      },
+      {
+        "id": 3,
+        "name": "James L.",
+        "rating": 4,
+        "date": "2023-08-10",
+        "review": "As someone who's always on the lookout for unique fashion pieces, I'm thrilled to have stumbled upon Shop.co. The selection of clothes is not only diverse but also on-point with the latest trends."
+      },
+      {
+        "id": 4,
+        "name": "Samantha D.",
+        "rating": 5,
+        "date": "2023-08-08",
+        "review": "I absolutely love this t-shirt! The fabric is incredibly soft and the fit is perfect. I've received so many compliments when wearing it. Definitely ordering more colors!"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What is the return policy?",
+        "answer": "We offer a 30-day return policy for all unworn items with tags attached."
+      },
+      {
+        "question": "How do I choose the right size?",
+        "answer": "Please refer to our size chart or contact customer service for sizing assistance."
+      },
+      {
+        "question": "Is this item machine washable?",
+        "answer": "Yes, this polo shirt is machine washable. Please follow the care instructions on the label."
+      }
+    ],
+    "date": "2025-06-10"
+  },{
+    "id": 1,
+    "name": "Polo T-shirt",
+    "price": 49.99,
+    "offer_price": 44.99,
+    "stars": 4.2,
+    "type": "T-shirt",
+    "dress_style": "Casual",
+    "colors": ["Blue", "Red"],
+    "quantity": 30,
+    "sizes": ["32", "34", "36", "38"],
+    "description": "Turquoise Cotton Lycra Polo Shirt.",
+    "images": {
+      "Red": [
+        "https://www.britishhouse.shop/cdn/shop/products/00_505b9ab3-f951-4635-a507-12d2f4c0a817_1800x1800.jpg?v=1658950890",
+        "https://www.britishhouse.shop/cdn/shop/products/014-POCL019_3_1800x1800.png?v=1679511188",
+        "https://www.britishhouse.shop/cdn/shop/files/020-POTO070_1_94cf973c-65f3-4ebf-b525-89e584c0e3a2_1800x1800.jpg?v=1748429179"
+      ],
+      "Blue": [
+        "https://www.britishhouse.shop/cdn/shop/products/new-polo-lycra-5_1800x1800.jpg?v=1658950662",
+        "https://www.britishhouse.shop/products/014-POCL018_1800x1800.png?v=1679511621",
+        "https://www.britishhouse.shop/cdn/shop/products/014-POCL018_1_1800x1800.png?v=1679511621"
+      ]
+    },
+    "reviews": [
+      {
+        "id": 1,
+        "name": "Sarah M.",
+        "rating": 5,
+        "date": "2023-08-14",
+        "review": "I'm blown away by the quality and style of the clothes I received from Shop.co. From casual wear to elegant dresses, every piece I've bought has exceeded my expectations."
+      },
+      {
+        "id": 2,
+        "name": "Alex K.",
+        "rating": 5,
+        "date": "2023-08-12",
+        "review": "Finding clothes that align with my personal style used to be a challenge until I discovered Shop.co. The range of options they offer is truly remarkable, catering to a variety of tastes and occasions."
+      },
+      {
+        "id": 3,
+        "name": "James L.",
+        "rating": 4,
+        "date": "2023-08-10",
+        "review": "As someone who's always on the lookout for unique fashion pieces, I'm thrilled to have stumbled upon Shop.co. The selection of clothes is not only diverse but also on-point with the latest trends."
+      },
+      {
+        "id": 4,
+        "name": "Samantha D.",
+        "rating": 5,
+        "date": "2023-08-08",
+        "review": "I absolutely love this t-shirt! The fabric is incredibly soft and the fit is perfect. I've received so many compliments when wearing it. Definitely ordering more colors!"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What is the return policy?",
+        "answer": "We offer a 30-day return policy for all unworn items with tags attached."
+      },
+      {
+        "question": "How do I choose the right size?",
+        "answer": "Please refer to our size chart or contact customer service for sizing assistance."
+      },
+      {
+        "question": "Is this item machine washable?",
+        "answer": "Yes, this polo shirt is machine washable. Please follow the care instructions on the label."
+      }
+    ],
+    "date": "2025-06-10"
+  },{
+    "id": 1,
+    "name": "Polo T-shirt",
+    "price": 49.99,
+    "offer_price": 44.99,
+    "stars": 4.2,
+    "type": "T-shirt",
+    "dress_style": "Casual",
+    "colors": ["Blue", "Red"],
+    "quantity": 30,
+    "sizes": ["32", "34", "36", "38"],
+    "description": "Turquoise Cotton Lycra Polo Shirt.",
+    "images": {
+      "Red": [
+        "https://www.britishhouse.shop/cdn/shop/products/00_505b9ab3-f951-4635-a507-12d2f4c0a817_1800x1800.jpg?v=1658950890",
+        "https://www.britishhouse.shop/cdn/shop/products/014-POCL019_3_1800x1800.png?v=1679511188",
+        "https://www.britishhouse.shop/cdn/shop/files/020-POTO070_1_94cf973c-65f3-4ebf-b525-89e584c0e3a2_1800x1800.jpg?v=1748429179"
+      ],
+      "Blue": [
+        "https://www.britishhouse.shop/cdn/shop/products/new-polo-lycra-5_1800x1800.jpg?v=1658950662",
+        "https://www.britishhouse.shop/products/014-POCL018_1800x1800.png?v=1679511621",
+        "https://www.britishhouse.shop/cdn/shop/products/014-POCL018_1_1800x1800.png?v=1679511621"
+      ]
+    },
+    "reviews": [
+      {
+        "id": 1,
+        "name": "Sarah M.",
+        "rating": 5,
+        "date": "2023-08-14",
+        "review": "I'm blown away by the quality and style of the clothes I received from Shop.co. From casual wear to elegant dresses, every piece I've bought has exceeded my expectations."
+      },
+      {
+        "id": 2,
+        "name": "Alex K.",
+        "rating": 5,
+        "date": "2023-08-12",
+        "review": "Finding clothes that align with my personal style used to be a challenge until I discovered Shop.co. The range of options they offer is truly remarkable, catering to a variety of tastes and occasions."
+      },
+      {
+        "id": 3,
+        "name": "James L.",
+        "rating": 4,
+        "date": "2023-08-10",
+        "review": "As someone who's always on the lookout for unique fashion pieces, I'm thrilled to have stumbled upon Shop.co. The selection of clothes is not only diverse but also on-point with the latest trends."
+      },
+      {
+        "id": 4,
+        "name": "Samantha D.",
+        "rating": 5,
+        "date": "2023-08-08",
+        "review": "I absolutely love this t-shirt! The fabric is incredibly soft and the fit is perfect. I've received so many compliments when wearing it. Definitely ordering more colors!"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What is the return policy?",
+        "answer": "We offer a 30-day return policy for all unworn items with tags attached."
+      },
+      {
+        "question": "How do I choose the right size?",
+        "answer": "Please refer to our size chart or contact customer service for sizing assistance."
+      },
+      {
+        "question": "Is this item machine washable?",
+        "answer": "Yes, this polo shirt is machine washable. Please follow the care instructions on the label."
+      }
+    ],
+    "date": "2025-06-10"
+  },{
+    "id": 1,
+    "name": "Polo T-shirt",
+    "price": 49.99,
+    "offer_price": 44.99,
+    "stars": 4.2,
+    "type": "T-shirt",
+    "dress_style": "Casual",
+    "colors": ["Blue", "Red"],
+    "quantity": 30,
+    "sizes": ["32", "34", "36", "38"],
+    "description": "Turquoise Cotton Lycra Polo Shirt.",
+    "images": {
+      "Red": [
+        "https://www.britishhouse.shop/cdn/shop/products/00_505b9ab3-f951-4635-a507-12d2f4c0a817_1800x1800.jpg?v=1658950890",
+        "https://www.britishhouse.shop/cdn/shop/products/014-POCL019_3_1800x1800.png?v=1679511188",
+        "https://www.britishhouse.shop/cdn/shop/files/020-POTO070_1_94cf973c-65f3-4ebf-b525-89e584c0e3a2_1800x1800.jpg?v=1748429179"
+      ],
+      "Blue": [
+        "https://www.britishhouse.shop/cdn/shop/products/new-polo-lycra-5_1800x1800.jpg?v=1658950662",
+        "https://www.britishhouse.shop/products/014-POCL018_1800x1800.png?v=1679511621",
+        "https://www.britishhouse.shop/cdn/shop/products/014-POCL018_1_1800x1800.png?v=1679511621"
+      ]
+    },
+    "reviews": [
+      {
+        "id": 1,
+        "name": "Sarah M.",
+        "rating": 5,
+        "date": "2023-08-14",
+        "review": "I'm blown away by the quality and style of the clothes I received from Shop.co. From casual wear to elegant dresses, every piece I've bought has exceeded my expectations."
+      },
+      {
+        "id": 2,
+        "name": "Alex K.",
+        "rating": 5,
+        "date": "2023-08-12",
+        "review": "Finding clothes that align with my personal style used to be a challenge until I discovered Shop.co. The range of options they offer is truly remarkable, catering to a variety of tastes and occasions."
+      },
+      {
+        "id": 3,
+        "name": "James L.",
+        "rating": 4,
+        "date": "2023-08-10",
+        "review": "As someone who's always on the lookout for unique fashion pieces, I'm thrilled to have stumbled upon Shop.co. The selection of clothes is not only diverse but also on-point with the latest trends."
+      },
+      {
+        "id": 4,
+        "name": "Samantha D.",
+        "rating": 5,
+        "date": "2023-08-08",
+        "review": "I absolutely love this t-shirt! The fabric is incredibly soft and the fit is perfect. I've received so many compliments when wearing it. Definitely ordering more colors!"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What is the return policy?",
+        "answer": "We offer a 30-day return policy for all unworn items with tags attached."
+      },
+      {
+        "question": "How do I choose the right size?",
+        "answer": "Please refer to our size chart or contact customer service for sizing assistance."
+      },
+      {
+        "question": "Is this item machine washable?",
+        "answer": "Yes, this polo shirt is machine washable. Please follow the care instructions on the label."
+      }
+    ],
+    "date": "2025-06-10"
+  },{
+    "id": 1,
+    "name": "Polo T-shirt",
+    "price": 49.99,
+    "offer_price": 44.99,
+    "stars": 4.2,
+    "type": "T-shirt",
+    "dress_style": "Casual",
+    "colors": ["Blue", "Red"],
+    "quantity": 30,
+    "sizes": ["32", "34", "36", "38"],
+    "description": "Turquoise Cotton Lycra Polo Shirt.",
+    "images": {
+      "Red": [
+        "https://www.britishhouse.shop/cdn/shop/products/00_505b9ab3-f951-4635-a507-12d2f4c0a817_1800x1800.jpg?v=1658950890",
+        "https://www.britishhouse.shop/cdn/shop/products/014-POCL019_3_1800x1800.png?v=1679511188",
+        "https://www.britishhouse.shop/cdn/shop/files/020-POTO070_1_94cf973c-65f3-4ebf-b525-89e584c0e3a2_1800x1800.jpg?v=1748429179"
+      ],
+      "Blue": [
+        "https://www.britishhouse.shop/cdn/shop/products/new-polo-lycra-5_1800x1800.jpg?v=1658950662",
+        "https://www.britishhouse.shop/products/014-POCL018_1800x1800.png?v=1679511621",
+        "https://www.britishhouse.shop/cdn/shop/products/014-POCL018_1_1800x1800.png?v=1679511621"
+      ]
+    },
+    "reviews": [
+      {
+        "id": 1,
+        "name": "Sarah M.",
+        "rating": 5,
+        "date": "2023-08-14",
+        "review": "I'm blown away by the quality and style of the clothes I received from Shop.co. From casual wear to elegant dresses, every piece I've bought has exceeded my expectations."
+      },
+      {
+        "id": 2,
+        "name": "Alex K.",
+        "rating": 5,
+        "date": "2023-08-12",
+        "review": "Finding clothes that align with my personal style used to be a challenge until I discovered Shop.co. The range of options they offer is truly remarkable, catering to a variety of tastes and occasions."
+      },
+      {
+        "id": 3,
+        "name": "James L.",
+        "rating": 4,
+        "date": "2023-08-10",
+        "review": "As someone who's always on the lookout for unique fashion pieces, I'm thrilled to have stumbled upon Shop.co. The selection of clothes is not only diverse but also on-point with the latest trends."
+      },
+      {
+        "id": 4,
+        "name": "Samantha D.",
+        "rating": 5,
+        "date": "2023-08-08",
+        "review": "I absolutely love this t-shirt! The fabric is incredibly soft and the fit is perfect. I've received so many compliments when wearing it. Definitely ordering more colors!"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What is the return policy?",
+        "answer": "We offer a 30-day return policy for all unworn items with tags attached."
+      },
+      {
+        "question": "How do I choose the right size?",
+        "answer": "Please refer to our size chart or contact customer service for sizing assistance."
+      },
+      {
+        "question": "Is this item machine washable?",
+        "answer": "Yes, this polo shirt is machine washable. Please follow the care instructions on the label."
+      }
+    ],
+    "date": "2025-06-10"
+  },{
+    "id": 1,
+    "name": "Polo T-shirt",
+    "price": 49.99,
+    "offer_price": 44.99,
+    "stars": 4.2,
+    "type": "T-shirt",
+    "dress_style": "Casual",
+    "colors": ["Blue", "Red"],
+    "quantity": 30,
+    "sizes": ["32", "34", "36", "38"],
+    "description": "Turquoise Cotton Lycra Polo Shirt.",
+    "images": {
+      "Red": [
+        "https://www.britishhouse.shop/cdn/shop/products/00_505b9ab3-f951-4635-a507-12d2f4c0a817_1800x1800.jpg?v=1658950890",
+        "https://www.britishhouse.shop/cdn/shop/products/014-POCL019_3_1800x1800.png?v=1679511188",
+        "https://www.britishhouse.shop/cdn/shop/files/020-POTO070_1_94cf973c-65f3-4ebf-b525-89e584c0e3a2_1800x1800.jpg?v=1748429179"
+      ],
+      "Blue": [
+        "https://www.britishhouse.shop/cdn/shop/products/new-polo-lycra-5_1800x1800.jpg?v=1658950662",
+        "https://www.britishhouse.shop/products/014-POCL018_1800x1800.png?v=1679511621",
+        "https://www.britishhouse.shop/cdn/shop/products/014-POCL018_1_1800x1800.png?v=1679511621"
+      ]
+    },
+    "reviews": [
+      {
+        "id": 1,
+        "name": "Sarah M.",
+        "rating": 5,
+        "date": "2023-08-14",
+        "review": "I'm blown away by the quality and style of the clothes I received from Shop.co. From casual wear to elegant dresses, every piece I've bought has exceeded my expectations."
+      },
+      {
+        "id": 2,
+        "name": "Alex K.",
+        "rating": 5,
+        "date": "2023-08-12",
+        "review": "Finding clothes that align with my personal style used to be a challenge until I discovered Shop.co. The range of options they offer is truly remarkable, catering to a variety of tastes and occasions."
+      },
+      {
+        "id": 3,
+        "name": "James L.",
+        "rating": 4,
+        "date": "2023-08-10",
+        "review": "As someone who's always on the lookout for unique fashion pieces, I'm thrilled to have stumbled upon Shop.co. The selection of clothes is not only diverse but also on-point with the latest trends."
+      },
+      {
+        "id": 4,
+        "name": "Samantha D.",
+        "rating": 5,
+        "date": "2023-08-08",
+        "review": "I absolutely love this t-shirt! The fabric is incredibly soft and the fit is perfect. I've received so many compliments when wearing it. Definitely ordering more colors!"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What is the return policy?",
+        "answer": "We offer a 30-day return policy for all unworn items with tags attached."
+      },
+      {
+        "question": "How do I choose the right size?",
+        "answer": "Please refer to our size chart or contact customer service for sizing assistance."
+      },
+      {
+        "question": "Is this item machine washable?",
+        "answer": "Yes, this polo shirt is machine washable. Please follow the care instructions on the label."
+      }
+    ],
+    "date": "2025-06-10"
+  },{
+    "id": 1,
+    "name": "Polo T-shirt",
+    "price": 49.99,
+    "offer_price": 44.99,
+    "stars": 4.2,
+    "type": "T-shirt",
+    "dress_style": "Casual",
+    "colors": ["Blue", "Red"],
+    "quantity": 30,
+    "sizes": ["32", "34", "36", "38"],
+    "description": "Turquoise Cotton Lycra Polo Shirt.",
+    "images": {
+      "Red": [
+        "https://www.britishhouse.shop/cdn/shop/products/00_505b9ab3-f951-4635-a507-12d2f4c0a817_1800x1800.jpg?v=1658950890",
+        "https://www.britishhouse.shop/cdn/shop/products/014-POCL019_3_1800x1800.png?v=1679511188",
+        "https://www.britishhouse.shop/cdn/shop/files/020-POTO070_1_94cf973c-65f3-4ebf-b525-89e584c0e3a2_1800x1800.jpg?v=1748429179"
+      ],
+      "Blue": [
+        "https://www.britishhouse.shop/cdn/shop/products/new-polo-lycra-5_1800x1800.jpg?v=1658950662",
+        "https://www.britishhouse.shop/products/014-POCL018_1800x1800.png?v=1679511621",
+        "https://www.britishhouse.shop/cdn/shop/products/014-POCL018_1_1800x1800.png?v=1679511621"
+      ]
+    },
+    "reviews": [
+      {
+        "id": 1,
+        "name": "Sarah M.",
+        "rating": 5,
+        "date": "2023-08-14",
+        "review": "I'm blown away by the quality and style of the clothes I received from Shop.co. From casual wear to elegant dresses, every piece I've bought has exceeded my expectations."
+      },
+      {
+        "id": 2,
+        "name": "Alex K.",
+        "rating": 5,
+        "date": "2023-08-12",
+        "review": "Finding clothes that align with my personal style used to be a challenge until I discovered Shop.co. The range of options they offer is truly remarkable, catering to a variety of tastes and occasions."
+      },
+      {
+        "id": 3,
+        "name": "James L.",
+        "rating": 4,
+        "date": "2023-08-10",
+        "review": "As someone who's always on the lookout for unique fashion pieces, I'm thrilled to have stumbled upon Shop.co. The selection of clothes is not only diverse but also on-point with the latest trends."
+      },
+      {
+        "id": 4,
+        "name": "Samantha D.",
+        "rating": 5,
+        "date": "2023-08-08",
+        "review": "I absolutely love this t-shirt! The fabric is incredibly soft and the fit is perfect. I've received so many compliments when wearing it. Definitely ordering more colors!"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What is the return policy?",
+        "answer": "We offer a 30-day return policy for all unworn items with tags attached."
+      },
+      {
+        "question": "How do I choose the right size?",
+        "answer": "Please refer to our size chart or contact customer service for sizing assistance."
+      },
+      {
+        "question": "Is this item machine washable?",
+        "answer": "Yes, this polo shirt is machine washable. Please follow the care instructions on the label."
+      }
+    ],
+    "date": "2025-06-10"
+  },{
+    "id": 1,
+    "name": "Polo T-shirt",
+    "price": 49.99,
+    "offer_price": 44.99,
+    "stars": 4.2,
+    "type": "T-shirt",
+    "dress_style": "Casual",
+    "colors": ["Blue", "Red"],
+    "quantity": 30,
+    "sizes": ["32", "34", "36", "38"],
+    "description": "Turquoise Cotton Lycra Polo Shirt.",
+    "images": {
+      "Red": [
+        "https://www.britishhouse.shop/cdn/shop/products/00_505b9ab3-f951-4635-a507-12d2f4c0a817_1800x1800.jpg?v=1658950890",
+        "https://www.britishhouse.shop/cdn/shop/products/014-POCL019_3_1800x1800.png?v=1679511188",
+        "https://www.britishhouse.shop/cdn/shop/files/020-POTO070_1_94cf973c-65f3-4ebf-b525-89e584c0e3a2_1800x1800.jpg?v=1748429179"
+      ],
+      "Blue": [
+        "https://www.britishhouse.shop/cdn/shop/products/new-polo-lycra-5_1800x1800.jpg?v=1658950662",
+        "https://www.britishhouse.shop/products/014-POCL018_1800x1800.png?v=1679511621",
+        "https://www.britishhouse.shop/cdn/shop/products/014-POCL018_1_1800x1800.png?v=1679511621"
+      ]
+    },
+    "reviews": [
+      {
+        "id": 1,
+        "name": "Sarah M.",
+        "rating": 5,
+        "date": "2023-08-14",
+        "review": "I'm blown away by the quality and style of the clothes I received from Shop.co. From casual wear to elegant dresses, every piece I've bought has exceeded my expectations."
+      },
+      {
+        "id": 2,
+        "name": "Alex K.",
+        "rating": 5,
+        "date": "2023-08-12",
+        "review": "Finding clothes that align with my personal style used to be a challenge until I discovered Shop.co. The range of options they offer is truly remarkable, catering to a variety of tastes and occasions."
+      },
+      {
+        "id": 3,
+        "name": "James L.",
+        "rating": 4,
+        "date": "2023-08-10",
+        "review": "As someone who's always on the lookout for unique fashion pieces, I'm thrilled to have stumbled upon Shop.co. The selection of clothes is not only diverse but also on-point with the latest trends."
+      },
+      {
+        "id": 4,
+        "name": "Samantha D.",
+        "rating": 5,
+        "date": "2023-08-08",
+        "review": "I absolutely love this t-shirt! The fabric is incredibly soft and the fit is perfect. I've received so many compliments when wearing it. Definitely ordering more colors!"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What is the return policy?",
+        "answer": "We offer a 30-day return policy for all unworn items with tags attached."
+      },
+      {
+        "question": "How do I choose the right size?",
+        "answer": "Please refer to our size chart or contact customer service for sizing assistance."
+      },
+      {
+        "question": "Is this item machine washable?",
+        "answer": "Yes, this polo shirt is machine washable. Please follow the care instructions on the label."
+      }
+    ],
+    "date": "2025-06-10"
+  },{
+    "id": 1,
+    "name": "Polo T-shirt",
+    "price": 49.99,
+    "offer_price": 44.99,
+    "stars": 4.2,
+    "type": "T-shirt",
+    "dress_style": "Casual",
+    "colors": ["Blue", "Red"],
+    "quantity": 30,
+    "sizes": ["32", "34", "36", "38"],
+    "description": "Turquoise Cotton Lycra Polo Shirt.",
+    "images": {
+      "Red": [
+        "https://www.britishhouse.shop/cdn/shop/products/00_505b9ab3-f951-4635-a507-12d2f4c0a817_1800x1800.jpg?v=1658950890",
+        "https://www.britishhouse.shop/cdn/shop/products/014-POCL019_3_1800x1800.png?v=1679511188",
+        "https://www.britishhouse.shop/cdn/shop/files/020-POTO070_1_94cf973c-65f3-4ebf-b525-89e584c0e3a2_1800x1800.jpg?v=1748429179"
+      ],
+      "Blue": [
+        "https://www.britishhouse.shop/cdn/shop/products/new-polo-lycra-5_1800x1800.jpg?v=1658950662",
+        "https://www.britishhouse.shop/products/014-POCL018_1800x1800.png?v=1679511621",
+        "https://www.britishhouse.shop/cdn/shop/products/014-POCL018_1_1800x1800.png?v=1679511621"
+      ]
+    },
+    "reviews": [
+      {
+        "id": 1,
+        "name": "Sarah M.",
+        "rating": 5,
+        "date": "2023-08-14",
+        "review": "I'm blown away by the quality and style of the clothes I received from Shop.co. From casual wear to elegant dresses, every piece I've bought has exceeded my expectations."
+      },
+      {
+        "id": 2,
+        "name": "Alex K.",
+        "rating": 5,
+        "date": "2023-08-12",
+        "review": "Finding clothes that align with my personal style used to be a challenge until I discovered Shop.co. The range of options they offer is truly remarkable, catering to a variety of tastes and occasions."
+      },
+      {
+        "id": 3,
+        "name": "James L.",
+        "rating": 4,
+        "date": "2023-08-10",
+        "review": "As someone who's always on the lookout for unique fashion pieces, I'm thrilled to have stumbled upon Shop.co. The selection of clothes is not only diverse but also on-point with the latest trends."
+      },
+      {
+        "id": 4,
+        "name": "Samantha D.",
+        "rating": 5,
+        "date": "2023-08-08",
+        "review": "I absolutely love this t-shirt! The fabric is incredibly soft and the fit is perfect. I've received so many compliments when wearing it. Definitely ordering more colors!"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What is the return policy?",
+        "answer": "We offer a 30-day return policy for all unworn items with tags attached."
+      },
+      {
+        "question": "How do I choose the right size?",
+        "answer": "Please refer to our size chart or contact customer service for sizing assistance."
+      },
+      {
+        "question": "Is this item machine washable?",
+        "answer": "Yes, this polo shirt is machine washable. Please follow the care instructions on the label."
+      }
+    ],
+    "date": "2025-06-10"
+  },{
+    "id": 1,
+    "name": "Polo T-shirt",
+    "price": 49.99,
+    "offer_price": 44.99,
+    "stars": 4.2,
+    "type": "T-shirt",
+    "dress_style": "Casual",
+    "colors": ["Blue", "Red"],
+    "quantity": 30,
+    "sizes": ["32", "34", "36", "38"],
+    "description": "Turquoise Cotton Lycra Polo Shirt.",
+    "images": {
+      "Red": [
+        "https://www.britishhouse.shop/cdn/shop/products/00_505b9ab3-f951-4635-a507-12d2f4c0a817_1800x1800.jpg?v=1658950890",
+        "https://www.britishhouse.shop/cdn/shop/products/014-POCL019_3_1800x1800.png?v=1679511188",
+        "https://www.britishhouse.shop/cdn/shop/files/020-POTO070_1_94cf973c-65f3-4ebf-b525-89e584c0e3a2_1800x1800.jpg?v=1748429179"
+      ],
+      "Blue": [
+        "https://www.britishhouse.shop/cdn/shop/products/new-polo-lycra-5_1800x1800.jpg?v=1658950662",
+        "https://www.britishhouse.shop/products/014-POCL018_1800x1800.png?v=1679511621",
+        "https://www.britishhouse.shop/cdn/shop/products/014-POCL018_1_1800x1800.png?v=1679511621"
+      ]
+    },
+    "reviews": [
+      {
+        "id": 1,
+        "name": "Sarah M.",
+        "rating": 5,
+        "date": "2023-08-14",
+        "review": "I'm blown away by the quality and style of the clothes I received from Shop.co. From casual wear to elegant dresses, every piece I've bought has exceeded my expectations."
+      },
+      {
+        "id": 2,
+        "name": "Alex K.",
+        "rating": 5,
+        "date": "2023-08-12",
+        "review": "Finding clothes that align with my personal style used to be a challenge until I discovered Shop.co. The range of options they offer is truly remarkable, catering to a variety of tastes and occasions."
+      },
+      {
+        "id": 3,
+        "name": "James L.",
+        "rating": 4,
+        "date": "2023-08-10",
+        "review": "As someone who's always on the lookout for unique fashion pieces, I'm thrilled to have stumbled upon Shop.co. The selection of clothes is not only diverse but also on-point with the latest trends."
+      },
+      {
+        "id": 4,
+        "name": "Samantha D.",
+        "rating": 5,
+        "date": "2023-08-08",
+        "review": "I absolutely love this t-shirt! The fabric is incredibly soft and the fit is perfect. I've received so many compliments when wearing it. Definitely ordering more colors!"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What is the return policy?",
+        "answer": "We offer a 30-day return policy for all unworn items with tags attached."
+      },
+      {
+        "question": "How do I choose the right size?",
+        "answer": "Please refer to our size chart or contact customer service for sizing assistance."
+      },
+      {
+        "question": "Is this item machine washable?",
+        "answer": "Yes, this polo shirt is machine washable. Please follow the care instructions on the label."
+      }
+    ],
+    "date": "2025-06-10"
+  },{
+    "id": 1,
+    "name": "Polo T-shirt",
+    "price": 49.99,
+    "offer_price": 44.99,
+    "stars": 4.2,
+    "type": "T-shirt",
+    "dress_style": "Casual",
+    "colors": ["Blue", "Red"],
+    "quantity": 30,
+    "sizes": ["32", "34", "36", "38"],
+    "description": "Turquoise Cotton Lycra Polo Shirt.",
+    "images": {
+      "Red": [
+        "https://www.britishhouse.shop/cdn/shop/products/00_505b9ab3-f951-4635-a507-12d2f4c0a817_1800x1800.jpg?v=1658950890",
+        "https://www.britishhouse.shop/cdn/shop/products/014-POCL019_3_1800x1800.png?v=1679511188",
+        "https://www.britishhouse.shop/cdn/shop/files/020-POTO070_1_94cf973c-65f3-4ebf-b525-89e584c0e3a2_1800x1800.jpg?v=1748429179"
+      ],
+      "Blue": [
+        "https://www.britishhouse.shop/cdn/shop/products/new-polo-lycra-5_1800x1800.jpg?v=1658950662",
+        "https://www.britishhouse.shop/products/014-POCL018_1800x1800.png?v=1679511621",
+        "https://www.britishhouse.shop/cdn/shop/products/014-POCL018_1_1800x1800.png?v=1679511621"
+      ]
+    },
+    "reviews": [
+      {
+        "id": 1,
+        "name": "Sarah M.",
+        "rating": 5,
+        "date": "2023-08-14",
+        "review": "I'm blown away by the quality and style of the clothes I received from Shop.co. From casual wear to elegant dresses, every piece I've bought has exceeded my expectations."
+      },
+      {
+        "id": 2,
+        "name": "Alex K.",
+        "rating": 5,
+        "date": "2023-08-12",
+        "review": "Finding clothes that align with my personal style used to be a challenge until I discovered Shop.co. The range of options they offer is truly remarkable, catering to a variety of tastes and occasions."
+      },
+      {
+        "id": 3,
+        "name": "James L.",
+        "rating": 4,
+        "date": "2023-08-10",
+        "review": "As someone who's always on the lookout for unique fashion pieces, I'm thrilled to have stumbled upon Shop.co. The selection of clothes is not only diverse but also on-point with the latest trends."
+      },
+      {
+        "id": 4,
+        "name": "Samantha D.",
+        "rating": 5,
+        "date": "2023-08-08",
+        "review": "I absolutely love this t-shirt! The fabric is incredibly soft and the fit is perfect. I've received so many compliments when wearing it. Definitely ordering more colors!"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What is the return policy?",
+        "answer": "We offer a 30-day return policy for all unworn items with tags attached."
+      },
+      {
+        "question": "How do I choose the right size?",
+        "answer": "Please refer to our size chart or contact customer service for sizing assistance."
+      },
+      {
+        "question": "Is this item machine washable?",
+        "answer": "Yes, this polo shirt is machine washable. Please follow the care instructions on the label."
+      }
+    ],
+    "date": "2025-06-10"
+  },{
+    "id": 1,
+    "name": "Polo T-shirt",
+    "price": 49.99,
+    "offer_price": 44.99,
+    "stars": 4.2,
+    "type": "T-shirt",
+    "dress_style": "Casual",
+    "colors": ["Blue", "Red"],
+    "quantity": 30,
+    "sizes": ["32", "34", "36", "38"],
+    "description": "Turquoise Cotton Lycra Polo Shirt.",
+    "images": {
+      "Red": [
+        "https://www.britishhouse.shop/cdn/shop/products/00_505b9ab3-f951-4635-a507-12d2f4c0a817_1800x1800.jpg?v=1658950890",
+        "https://www.britishhouse.shop/cdn/shop/products/014-POCL019_3_1800x1800.png?v=1679511188",
+        "https://www.britishhouse.shop/cdn/shop/files/020-POTO070_1_94cf973c-65f3-4ebf-b525-89e584c0e3a2_1800x1800.jpg?v=1748429179"
+      ],
+      "Blue": [
+        "https://www.britishhouse.shop/cdn/shop/products/new-polo-lycra-5_1800x1800.jpg?v=1658950662",
+        "https://www.britishhouse.shop/products/014-POCL018_1800x1800.png?v=1679511621",
+        "https://www.britishhouse.shop/cdn/shop/products/014-POCL018_1_1800x1800.png?v=1679511621"
+      ]
+    },
+    "reviews": [
+      {
+        "id": 1,
+        "name": "Sarah M.",
+        "rating": 5,
+        "date": "2023-08-14",
+        "review": "I'm blown away by the quality and style of the clothes I received from Shop.co. From casual wear to elegant dresses, every piece I've bought has exceeded my expectations."
+      },
+      {
+        "id": 2,
+        "name": "Alex K.",
+        "rating": 5,
+        "date": "2023-08-12",
+        "review": "Finding clothes that align with my personal style used to be a challenge until I discovered Shop.co. The range of options they offer is truly remarkable, catering to a variety of tastes and occasions."
+      },
+      {
+        "id": 3,
+        "name": "James L.",
+        "rating": 4,
+        "date": "2023-08-10",
+        "review": "As someone who's always on the lookout for unique fashion pieces, I'm thrilled to have stumbled upon Shop.co. The selection of clothes is not only diverse but also on-point with the latest trends."
+      },
+      {
+        "id": 4,
+        "name": "Samantha D.",
+        "rating": 5,
+        "date": "2023-08-08",
+        "review": "I absolutely love this t-shirt! The fabric is incredibly soft and the fit is perfect. I've received so many compliments when wearing it. Definitely ordering more colors!"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What is the return policy?",
+        "answer": "We offer a 30-day return policy for all unworn items with tags attached."
+      },
+      {
+        "question": "How do I choose the right size?",
+        "answer": "Please refer to our size chart or contact customer service for sizing assistance."
+      },
+      {
+        "question": "Is this item machine washable?",
+        "answer": "Yes, this polo shirt is machine washable. Please follow the care instructions on the label."
+      }
+    ],
+    "date": "2025-06-10"
+  },{
+    "id": 1,
+    "name": "Polo T-shirt",
+    "price": 49.99,
+    "offer_price": 44.99,
+    "stars": 4.2,
+    "type": "T-shirt",
+    "dress_style": "Casual",
+    "colors": ["Blue", "Red"],
+    "quantity": 30,
+    "sizes": ["32", "34", "36", "38"],
+    "description": "Turquoise Cotton Lycra Polo Shirt.",
+    "images": {
+      "Red": [
+        "https://www.britishhouse.shop/cdn/shop/products/00_505b9ab3-f951-4635-a507-12d2f4c0a817_1800x1800.jpg?v=1658950890",
+        "https://www.britishhouse.shop/cdn/shop/products/014-POCL019_3_1800x1800.png?v=1679511188",
+        "https://www.britishhouse.shop/cdn/shop/files/020-POTO070_1_94cf973c-65f3-4ebf-b525-89e584c0e3a2_1800x1800.jpg?v=1748429179"
+      ],
+      "Blue": [
+        "https://www.britishhouse.shop/cdn/shop/products/new-polo-lycra-5_1800x1800.jpg?v=1658950662",
+        "https://www.britishhouse.shop/products/014-POCL018_1800x1800.png?v=1679511621",
+        "https://www.britishhouse.shop/cdn/shop/products/014-POCL018_1_1800x1800.png?v=1679511621"
+      ]
+    },
+    "reviews": [
+      {
+        "id": 1,
+        "name": "Sarah M.",
+        "rating": 5,
+        "date": "2023-08-14",
+        "review": "I'm blown away by the quality and style of the clothes I received from Shop.co. From casual wear to elegant dresses, every piece I've bought has exceeded my expectations."
+      },
+      {
+        "id": 2,
+        "name": "Alex K.",
+        "rating": 5,
+        "date": "2023-08-12",
+        "review": "Finding clothes that align with my personal style used to be a challenge until I discovered Shop.co. The range of options they offer is truly remarkable, catering to a variety of tastes and occasions."
+      },
+      {
+        "id": 3,
+        "name": "James L.",
+        "rating": 4,
+        "date": "2023-08-10",
+        "review": "As someone who's always on the lookout for unique fashion pieces, I'm thrilled to have stumbled upon Shop.co. The selection of clothes is not only diverse but also on-point with the latest trends."
+      },
+      {
+        "id": 4,
+        "name": "Samantha D.",
+        "rating": 5,
+        "date": "2023-08-08",
+        "review": "I absolutely love this t-shirt! The fabric is incredibly soft and the fit is perfect. I've received so many compliments when wearing it. Definitely ordering more colors!"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What is the return policy?",
+        "answer": "We offer a 30-day return policy for all unworn items with tags attached."
+      },
+      {
+        "question": "How do I choose the right size?",
+        "answer": "Please refer to our size chart or contact customer service for sizing assistance."
+      },
+      {
+        "question": "Is this item machine washable?",
+        "answer": "Yes, this polo shirt is machine washable. Please follow the care instructions on the label."
+      }
+    ],
+    "date": "2025-06-10"
+  },{
+    "id": 1,
+    "name": "Polo T-shirt",
+    "price": 49.99,
+    "offer_price": 44.99,
+    "stars": 4.2,
+    "type": "T-shirt",
+    "dress_style": "Casual",
+    "colors": ["Blue", "Red"],
+    "quantity": 30,
+    "sizes": ["32", "34", "36", "38"],
+    "description": "Turquoise Cotton Lycra Polo Shirt.",
+    "images": {
+      "Red": [
+        "https://www.britishhouse.shop/cdn/shop/products/00_505b9ab3-f951-4635-a507-12d2f4c0a817_1800x1800.jpg?v=1658950890",
+        "https://www.britishhouse.shop/cdn/shop/products/014-POCL019_3_1800x1800.png?v=1679511188",
+        "https://www.britishhouse.shop/cdn/shop/files/020-POTO070_1_94cf973c-65f3-4ebf-b525-89e584c0e3a2_1800x1800.jpg?v=1748429179"
+      ],
+      "Blue": [
+        "https://www.britishhouse.shop/cdn/shop/products/new-polo-lycra-5_1800x1800.jpg?v=1658950662",
+        "https://www.britishhouse.shop/products/014-POCL018_1800x1800.png?v=1679511621",
+        "https://www.britishhouse.shop/cdn/shop/products/014-POCL018_1_1800x1800.png?v=1679511621"
+      ]
+    },
+    "reviews": [
+      {
+        "id": 1,
+        "name": "Sarah M.",
+        "rating": 5,
+        "date": "2023-08-14",
+        "review": "I'm blown away by the quality and style of the clothes I received from Shop.co. From casual wear to elegant dresses, every piece I've bought has exceeded my expectations."
+      },
+      {
+        "id": 2,
+        "name": "Alex K.",
+        "rating": 5,
+        "date": "2023-08-12",
+        "review": "Finding clothes that align with my personal style used to be a challenge until I discovered Shop.co. The range of options they offer is truly remarkable, catering to a variety of tastes and occasions."
+      },
+      {
+        "id": 3,
+        "name": "James L.",
+        "rating": 4,
+        "date": "2023-08-10",
+        "review": "As someone who's always on the lookout for unique fashion pieces, I'm thrilled to have stumbled upon Shop.co. The selection of clothes is not only diverse but also on-point with the latest trends."
+      },
+      {
+        "id": 4,
+        "name": "Samantha D.",
+        "rating": 5,
+        "date": "2023-08-08",
+        "review": "I absolutely love this t-shirt! The fabric is incredibly soft and the fit is perfect. I've received so many compliments when wearing it. Definitely ordering more colors!"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What is the return policy?",
+        "answer": "We offer a 30-day return policy for all unworn items with tags attached."
+      },
+      {
+        "question": "How do I choose the right size?",
+        "answer": "Please refer to our size chart or contact customer service for sizing assistance."
+      },
+      {
+        "question": "Is this item machine washable?",
+        "answer": "Yes, this polo shirt is machine washable. Please follow the care instructions on the label."
+      }
+    ],
+    "date": "2025-06-10"
+  },{
+    "id": 1,
+    "name": "Polo T-shirt",
+    "price": 49.99,
+    "offer_price": 44.99,
+    "stars": 4.2,
+    "type": "T-shirt",
+    "dress_style": "Casual",
+    "colors": ["Blue", "Red"],
+    "quantity": 30,
+    "sizes": ["32", "34", "36", "38"],
+    "description": "Turquoise Cotton Lycra Polo Shirt.",
+    "images": {
+      "Red": [
+        "https://www.britishhouse.shop/cdn/shop/products/00_505b9ab3-f951-4635-a507-12d2f4c0a817_1800x1800.jpg?v=1658950890",
+        "https://www.britishhouse.shop/cdn/shop/products/014-POCL019_3_1800x1800.png?v=1679511188",
+        "https://www.britishhouse.shop/cdn/shop/files/020-POTO070_1_94cf973c-65f3-4ebf-b525-89e584c0e3a2_1800x1800.jpg?v=1748429179"
+      ],
+      "Blue": [
+        "https://www.britishhouse.shop/cdn/shop/products/new-polo-lycra-5_1800x1800.jpg?v=1658950662",
+        "https://www.britishhouse.shop/products/014-POCL018_1800x1800.png?v=1679511621",
+        "https://www.britishhouse.shop/cdn/shop/products/014-POCL018_1_1800x1800.png?v=1679511621"
+      ]
+    },
+    "reviews": [
+      {
+        "id": 1,
+        "name": "Sarah M.",
+        "rating": 5,
+        "date": "2023-08-14",
+        "review": "I'm blown away by the quality and style of the clothes I received from Shop.co. From casual wear to elegant dresses, every piece I've bought has exceeded my expectations."
+      },
+      {
+        "id": 2,
+        "name": "Alex K.",
+        "rating": 5,
+        "date": "2023-08-12",
+        "review": "Finding clothes that align with my personal style used to be a challenge until I discovered Shop.co. The range of options they offer is truly remarkable, catering to a variety of tastes and occasions."
+      },
+      {
+        "id": 3,
+        "name": "James L.",
+        "rating": 4,
+        "date": "2023-08-10",
+        "review": "As someone who's always on the lookout for unique fashion pieces, I'm thrilled to have stumbled upon Shop.co. The selection of clothes is not only diverse but also on-point with the latest trends."
+      },
+      {
+        "id": 4,
+        "name": "Samantha D.",
+        "rating": 5,
+        "date": "2023-08-08",
+        "review": "I absolutely love this t-shirt! The fabric is incredibly soft and the fit is perfect. I've received so many compliments when wearing it. Definitely ordering more colors!"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What is the return policy?",
+        "answer": "We offer a 30-day return policy for all unworn items with tags attached."
+      },
+      {
+        "question": "How do I choose the right size?",
+        "answer": "Please refer to our size chart or contact customer service for sizing assistance."
+      },
+      {
+        "question": "Is this item machine washable?",
+        "answer": "Yes, this polo shirt is machine washable. Please follow the care instructions on the label."
+      }
+    ],
+    "date": "2025-06-10"
   }
 ]

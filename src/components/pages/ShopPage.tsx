@@ -1,7 +1,7 @@
 import { useParams } from 'react-router-dom';
 import items from '../../../items.json';
 import ProductCard from '../ProductCard';
-import { useState } from 'react';
+import { useState, useMemo, useCallback } from 'react';
 
 const ShopPage = () => {
   const { dress_style } = useParams<{ dress_style?: string }>();
@@ -9,29 +9,91 @@ const ShopPage = () => {
   const [selectedType, setSelectedType] = useState<string>('');
   const [selectedSizes, setSelectedSizes] = useState<string[]>([]);
   const [showFilters, setShowFilters] = useState<boolean>(false);
+  
+  // Pagination states
+  const [currentPage, setCurrentPage] = useState<number>(1);
+  const [itemsPerPage, setItemsPerPage] = useState<number>(12);
 
   const prices = items.map((i) => i.offer_price);
   const minPrice = Math.min(...prices);
   const maxPrice = Math.max(...prices);
   const [priceRange, setPriceRange] = useState<number>(maxPrice);
 
-  const filteredItems = items.filter(
-    (item) =>
-      (!dress_style || item.dress_style === dress_style) &&
-      (selectedColor === '' || item.colors.includes(selectedColor)) &&
-      (selectedType === '' || item.type === selectedType) &&
-      (selectedSizes.length === 0 || selectedSizes.some((size) => item.sizes.includes(size))) &&
-      item.offer_price <= priceRange
-  );
+  // Memoize filtered items to avoid recalculation on every render
+  const filteredItems = useMemo(() => {
+    return items.filter(
+      (item) =>
+        (!dress_style || item.dress_style === dress_style) &&
+        (selectedColor === '' || item.colors.includes(selectedColor)) &&
+        (selectedType === '' || item.type === selectedType) &&
+        (selectedSizes.length === 0 || selectedSizes.some((size) => item.sizes.includes(size))) &&
+        item.offer_price <= priceRange
+    );
+  }, [dress_style, selectedColor, selectedType, selectedSizes, priceRange]);
 
-  const typefilteredItems = items.filter(
-    (item) =>
-      (!dress_style || item.dress_style === dress_style) &&
-      (selectedColor === '' || item.colors.includes(selectedColor))
-  );
+  const typefilteredItems = useMemo(() => {
+    return items.filter(
+      (item) =>
+        (!dress_style || item.dress_style === dress_style) &&
+        (selectedColor === '' || item.colors.includes(selectedColor))
+    );
+  }, [dress_style, selectedColor]);
+
+  // Calculate pagination
+  const totalPages = Math.ceil(filteredItems.length / itemsPerPage);
+  const startIndex = (currentPage - 1) * itemsPerPage;
+  const endIndex = startIndex + itemsPerPage;
+  const currentItems = filteredItems.slice(startIndex, endIndex);
+
+  // Reset to first page when filters change
+  const handleFilterChange = useCallback((filterSetter: any, value: any) => {
+    filterSetter(value);
+    setCurrentPage(1);
+  }, []);
 
   const toggleFilters = () => {
     setShowFilters(!showFilters);
+  };
+
+  const handlePageChange = (page: number) => {
+    setCurrentPage(page);
+    // Scroll to top of products section
+    document.querySelector('main')?.scrollIntoView({ behavior: 'smooth' });
+  };
+
+  const handleItemsPerPageChange = (count: number) => {
+    setItemsPerPage(count);
+    setCurrentPage(1);
+  };
+
+  // Generate page numbers for pagination
+  const getPageNumbers = () => {
+    const pages = [];
+    const maxVisiblePages = 5;
+    
+    if (totalPages <= maxVisiblePages) {
+      for (let i = 1; i <= totalPages; i++) {
+        pages.push(i);
+      }
+    } else {
+      if (currentPage <= 3) {
+        for (let i = 1; i <= 4; i++) pages.push(i);
+        pages.push('...');
+        pages.push(totalPages);
+      } else if (currentPage >= totalPages - 2) {
+        pages.push(1);
+        pages.push('...');
+        for (let i = totalPages - 3; i <= totalPages; i++) pages.push(i);
+      } else {
+        pages.push(1);
+        pages.push('...');
+        for (let i = currentPage - 1; i <= currentPage + 1; i++) pages.push(i);
+        pages.push('...');
+        pages.push(totalPages);
+      }
+    }
+    
+    return pages;
   };
 
   return (
@@ -64,7 +126,6 @@ const ShopPage = () => {
           <div className="bg-white rounded-lg p-4 sm:p-6 shadow-md">
             <div className="flex items-center justify-between mb-4">
               <h2 className="text-lg sm:text-xl font-bold satoshi">Filters</h2>
-              {/* Mobile close button */}
               <button
                 onClick={toggleFilters}
                 className="lg:hidden p-2 hover:bg-gray-100 rounded-full"
@@ -88,7 +149,7 @@ const ShopPage = () => {
                         ? 'bg-black text-white' 
                         : 'text-gray-600 hover:bg-gray-100'
                     }`}
-                    onClick={() => setSelectedType(type)}
+                    onClick={() => handleFilterChange(setSelectedType, type)}
                   >
                     {type}
                   </button>
@@ -99,7 +160,7 @@ const ShopPage = () => {
                       ? 'bg-black text-white' 
                       : 'text-gray-600 hover:bg-gray-100'
                   }`}
-                  onClick={() => setSelectedType("")}
+                  onClick={() => handleFilterChange(setSelectedType, "")}
                 >
                   All Types
                 </button>
@@ -119,7 +180,7 @@ const ShopPage = () => {
                 min={minPrice}
                 max={maxPrice}
                 value={priceRange}
-                onChange={(e) => setPriceRange(Number(e.target.value))}
+                onChange={(e) => handleFilterChange(setPriceRange, Number(e.target.value))}
               />
               <div className="flex justify-between text-xs text-gray-500 mt-1">
                 <span>${minPrice}</span>
@@ -142,7 +203,7 @@ const ShopPage = () => {
                         : 'border-gray-300 hover:border-gray-400'
                     }`}
                     style={{ backgroundColor: color.toLowerCase() }}
-                    onClick={() => setSelectedColor(color)}
+                    onClick={() => handleFilterChange(setSelectedColor, color)}
                     title={color}
                   ></button>
                 ))}
@@ -152,7 +213,7 @@ const ShopPage = () => {
                       ? 'bg-black text-white border-black' 
                       : 'bg-white text-gray-700 border-gray-300 hover:border-gray-400'
                   }`}
-                  onClick={() => setSelectedColor('')}
+                  onClick={() => handleFilterChange(setSelectedColor, '')}
                 >
                   All
                 </button>
@@ -176,9 +237,10 @@ const ShopPage = () => {
                           : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
                       }`}
                       onClick={() => {
-                        setSelectedSizes((prev) =>
-                          isSelected ? prev.filter((s) => s !== size) : [...prev, size]
-                        );
+                        const newSizes = isSelected 
+                          ? selectedSizes.filter((s) => s !== size) 
+                          : [...selectedSizes, size];
+                        handleFilterChange(setSelectedSizes, newSizes);
                       }}
                     >
                       {size}
@@ -187,7 +249,7 @@ const ShopPage = () => {
                 })}
                 <button
                   className="py-2 px-3 text-sm rounded-full bg-gray-200 text-gray-700 hover:bg-gray-300 transition-colors"
-                  onClick={() => setSelectedSizes([])}
+                  onClick={() => handleFilterChange(setSelectedSizes, [])}
                 >
                   All
                 </button>
@@ -202,6 +264,7 @@ const ShopPage = () => {
                   setSelectedType('');
                   setSelectedSizes([]);
                   setPriceRange(maxPrice);
+                  setCurrentPage(1);
                 }}
                 className="w-full py-2 px-4 text-sm text-gray-600 border border-gray-300 rounded-lg hover:bg-gray-50 transition-colors"
               >
@@ -217,14 +280,30 @@ const ShopPage = () => {
             <h1 className="text-xl sm:text-2xl lg:text-3xl font-bold satoshi mb-2 sm:mb-0">
               {dress_style}
             </h1>
-            <div className="text-sm text-gray-600">
-              {filteredItems.length} {filteredItems.length === 1 ? 'item' : 'items'} found
+            <div className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4">
+              <div className="text-sm text-gray-600">
+                {filteredItems.length} {filteredItems.length === 1 ? 'item' : 'items'} found
+              </div>
+              
+              {/* Items per page selector */}
+              <div className="flex items-center gap-2 text-sm">
+                <span className="text-gray-600">Show:</span>
+                <select
+                  value={itemsPerPage}
+                  onChange={(e) => handleItemsPerPageChange(Number(e.target.value))}
+                  className="border border-gray-300 rounded px-2 py-1 text-sm"
+                >
+                  <option value={12}>12</option>
+                  <option value={24}>24</option>
+                  <option value={48}>48</option>
+                </select>
+              </div>
             </div>
           </div>
 
           {/* Products Grid */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
-            {filteredItems.length === 0 ? (
+          <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 gap-2 sm:gap-4 lg:gap-6 mb-8">
+            {currentItems.length === 0 ? (
               <div className="col-span-full text-center py-12">
                 <div className="text-gray-400 mb-4">
                   <svg className="w-16 h-16 mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -235,7 +314,7 @@ const ShopPage = () => {
                 <p className="text-sm text-gray-500">Try adjusting your filters to see more results</p>
               </div>
             ) : (
-              filteredItems.map((item: any, idx: number) => {
+              currentItems.map((item: any, idx: number) => {
                 const firstColor = Object.keys(item.images)[0];
                 const image = item.images[selectedColor === '' ? firstColor : selectedColor] || [item.images[firstColor]?.[0]];
                 return (
@@ -251,6 +330,56 @@ const ShopPage = () => {
               })
             )}
           </div>
+
+          {/* Pagination */}
+          {totalPages > 1 && (
+            <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
+              <div className="text-sm text-gray-600">
+                Showing {startIndex + 1}-{Math.min(endIndex, filteredItems.length)} of {filteredItems.length} items
+              </div>
+              
+              <div className="flex items-center gap-2">
+                {/* Previous button */}
+                <button
+                  onClick={() => handlePageChange(currentPage - 1)}
+                  disabled={currentPage === 1}
+                  className="px-3 py-2 text-sm border border-gray-300 rounded-lg disabled:opacity-50 disabled:cursor-not-allowed hover:bg-gray-50 transition-colors"
+                >
+                  Previous
+                </button>
+
+                {/* Page numbers */}
+                <div className="flex gap-1">
+                  {getPageNumbers().map((page, idx) => (
+                    page === '...' ? (
+                      <span key={idx} className="px-3 py-2 text-sm text-gray-400">...</span>
+                    ) : (
+                      <button
+                        key={idx}
+                        onClick={() => handlePageChange(page as number)}
+                        className={`px-3 py-2 text-sm rounded-lg transition-colors ${
+                          currentPage === page
+                            ? 'bg-black text-white'
+                            : 'border border-gray-300 hover:bg-gray-50'
+                        }`}
+                      >
+                        {page}
+                      </button>
+                    )
+                  ))}
+                </div>
+
+                {/* Next button */}
+                <button
+                  onClick={() => handlePageChange(currentPage + 1)}
+                  disabled={currentPage === totalPages}
+                  className="px-3 py-2 text-sm border border-gray-300 rounded-lg disabled:opacity-50 disabled:cursor-not-allowed hover:bg-gray-50 transition-colors"
+                >
+                  Next
+                </button>
+              </div>
+            </div>
+          )}
         </main>
       </div>
     </div>

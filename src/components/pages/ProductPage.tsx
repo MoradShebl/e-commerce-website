@@ -38,6 +38,12 @@ const ProductPage: React.FC = () => {
     const currentImages = product.images[selectedColor] || [];
     const currentImage = currentImages[currentImageIndex] || '';
 
+    const addToCart = (product: any) => {
+        const existingCart = JSON.parse(localStorage.getItem("cart") || "[]");
+        existingCart.push(product);
+        localStorage.setItem("cart", JSON.stringify(existingCart));
+    };
+
     const handleColorSelect = (color: string) => {
         setSelectedColor(color);
         setCurrentImageIndex(0);
@@ -271,7 +277,7 @@ const ProductPage: React.FC = () => {
                             </div>
 
                             <div className='w-full'>
-                                <button className="w-full bg-black text-white py-3 lg:py-4 px-6 rounded-full font-medium hover:bg-gray-800 transition-colors">
+                                <button onClick={() => addToCart(product)} className="w-full bg-black text-white py-3 lg:py-4 px-6 rounded-full font-medium hover:bg-gray-800 transition-colors">
                                     Add to Cart
                                 </button>
                             </div>
@@ -357,7 +363,7 @@ const ProductPage: React.FC = () => {
                 {/* Show Case */}
                 <ShowCase name="You might also like" filter_type={product.type} />
             </div>
-        </section>
+        </section >
     );
 };
 
